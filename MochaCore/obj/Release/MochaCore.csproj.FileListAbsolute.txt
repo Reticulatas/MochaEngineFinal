@@ -1,0 +1,5 @@
+C:\Users\Fuller\Desktop\mochagame\MochaStudio\output\MochaCore.dll
+C:\Users\Fuller\Desktop\mochagame\MochaStudio\output\MochaCore.pdb
+C:\Users\Fuller\Desktop\mochagame\MochaStudio\MochaCore\obj\Release\MochaCore.dll
+C:\Users\Fuller\Desktop\mochagame\MochaStudio\MochaCore\obj\Release\MochaCore.pdb
+C:\Users\Fuller\Desktop\mochagame\MochaStudio\MochaCore\obj\Release\MochaCore.csprojResolveAssemblyReference.cache

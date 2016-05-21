@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B782D8A1-C8FF-4BAB-925B-4738A16C6CBB}</ProjectGuid>
+    <RootNamespace>Roaster</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)MochaMath;$(SolutionDir)dependencies/boost;$(SolutionDir)Engine;$(SolutionDir)dependencies\fbxSdk\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)output;$(SolutionDir)dependencies/lib;$(SolutionDir)dependencies/fbxSdk/lib/x86/debug;$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)output\</OutDir>
+    <IntDir>$(SolutionDir)intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)MochaMath;$(SolutionDir)dependencies\fbxSdk\include;$(SolutionDir)Engine;$(SolutionDir)dependencies/boost;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)output;$(SolutionDir)dependencies/fbxSdk/lib/x86/release;$(SolutionDir)lib;$(SolutionDir)dependencies/lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)output\</OutDir>
+    <IntDir>$(SolutionDir)intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>MochaMath.lib;libfbxsdk-md.lib;libboost_filesystem-vc120-mt-gd-1_55.lib;dHACD_LIB.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BrowseInformation>true</BrowseInformation>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>MochaMath.lib;libfbxsdk-md.lib;libboost_filesystem-vc120-mt-1_55.lib;HACD_LIB.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="FBXConversion.cpp" />
+    <ClCompile Include="FBXExporter.cpp" />
+    <ClCompile Include="FBXUtility.cpp" />
+    <ClCompile Include="FMODBankExporter.cpp" />
+    <ClCompile Include="HACDfiles\ConstraintBuilder.cpp" />
+    <ClCompile Include="HACDfiles\ConvexHull.cpp" />
+    <ClCompile Include="HACDfiles\dgConvexHull3d.cpp" />
+    <ClCompile Include="HACDfiles\dgGoogol.cpp" />
+    <ClCompile Include="HACDfiles\dgMatrix.cpp" />
+    <ClCompile Include="HACDfiles\dgMeshEffect.cpp" />
+    <ClCompile Include="HACDfiles\dgMeshEffect2.cpp" />
+    <ClCompile Include="HACDfiles\dgMeshEffect3.cpp" />
+    <ClCompile Include="HACDfiles\dgPolyhedra.cpp" />
+    <ClCompile Include="HACDfiles\dgQuaternion.cpp" />
+    <ClCompile Include="HACDfiles\dgSmallDeterminant.cpp" />
+    <ClCompile Include="HACDfiles\dgSphere.cpp" />
+    <ClCompile Include="HACDfiles\dgTree.cpp" />
+    <ClCompile Include="HACDfiles\dgTypes.cpp" />
+    <ClCompile Include="HACDfiles\FloatMath.cpp" />
+    <ClCompile Include="HACDfiles\HACD.cpp" />
+    <ClCompile Include="HACDfiles\hacdGraph.cpp" />
+    <ClCompile Include="HACDfiles\hacdHACD.cpp" />
+    <ClCompile Include="HACDfiles\hacdICHull.cpp" />
+    <ClCompile Include="HACDfiles\hacdManifoldMesh.cpp" />
+    <ClCompile Include="HACDfiles\Helper.cpp" />
+    <ClCompile Include="HACDfiles\MergeHulls.cpp" />
+    <ClCompile Include="HACDfiles\MeshImport.cpp" />
+    <ClCompile Include="HACDfiles\PxMapSet.cpp" />
+    <ClCompile Include="HACDfiles\TriTri.cpp" />
+    <ClCompile Include="HACDfiles\WuQuantizer.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChunkFileWriter.h" />
+    <ClInclude Include="FBXConversion.h" />
+    <ClInclude Include="FBXData.h" />
+    <ClInclude Include="FBXExporter.h" />
+    <ClInclude Include="FBXUtility.h" />
+    <ClInclude Include="FMODBankExporter.h" />
+    <ClInclude Include="HACDfiles\ConstraintBuilder.h" />
+    <ClInclude Include="HACDfiles\ConvexHull.h" />
+    <ClInclude Include="HACDfiles\dgArray.h" />
+    <ClInclude Include="HACDfiles\dgConvexHull3d.h" />
+    <ClInclude Include="HACDfiles\dgGoogol.h" />
+    <ClInclude Include="HACDfiles\dgHeap.h" />
+    <ClInclude Include="HACDfiles\dgList.h" />
+    <ClInclude Include="HACDfiles\dgMatrix.h" />
+    <ClInclude Include="HACDfiles\dgMeshEffect.h" />
+    <ClInclude Include="HACDfiles\dgPlane.h" />
+    <ClInclude Include="HACDfiles\dgPolyhedra.h" />
+    <ClInclude Include="HACDfiles\dgQuaternion.h" />
+    <ClInclude Include="HACDfiles\dgRefCounter.h" />
+    <ClInclude Include="HACDfiles\dgSmallDeterminant.h" />
+    <ClInclude Include="HACDfiles\dgSphere.h" />
+    <ClInclude Include="HACDfiles\dgStack.h" />
+    <ClInclude Include="HACDfiles\dgTree.h" />
+    <ClInclude Include="HACDfiles\dgTypes.h" />
+    <ClInclude Include="HACDfiles\dgVector.h" />
+    <ClInclude Include="HACDfiles\FloatMath.h" />
+    <ClInclude Include="HACDfiles\HACD.h" />
+    <ClInclude Include="HACDfiles\hacdCircularList.h" />
+    <ClInclude Include="HACDfiles\hacdContainer.h" />
+    <ClInclude Include="HACDfiles\hacdGraph.h" />
+    <ClInclude Include="HACDfiles\hacdHACD.h" />
+    <ClInclude Include="HACDfiles\hacdICHull.h" />
+    <ClInclude Include="HACDfiles\hacdManifoldMesh.h" />
+    <ClInclude Include="HACDfiles\hacdVector.h" />
+    <ClInclude Include="HACDfiles\hacdVersion.h" />
+    <ClInclude Include="HACDfiles\Helper.h" />
+    <ClInclude Include="HACDfiles\MergeHulls.h" />
+    <ClInclude Include="HACDfiles\MeshImport.h" />
+    <ClInclude Include="HACDfiles\PlatformConfigHACD.h" />
+    <ClInclude Include="HACDfiles\PxMapSet.h" />
+    <ClInclude Include="HACDfiles\PxMapSetInternal.h" />
+    <ClInclude Include="HACDfiles\PxVector.h" />
+    <ClInclude Include="HACDfiles\TriTri.h" />
+    <ClInclude Include="HACDfiles\WuQuantizer.h" />
+    <ClInclude Include="RoasterUtility.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

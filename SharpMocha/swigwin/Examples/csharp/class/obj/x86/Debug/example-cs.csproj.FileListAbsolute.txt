@@ -1,0 +1,4 @@
+C:\Users\Nicholas\Desktop\swigwin-3.0.2\Examples\csharp\class\bin\x86\Debug\runme.exe
+C:\Users\Nicholas\Desktop\swigwin-3.0.2\Examples\csharp\class\bin\x86\Debug\runme.pdb
+C:\Users\Nicholas\Desktop\swigwin-3.0.2\Examples\csharp\class\obj\x86\Debug\runme.exe
+C:\Users\Nicholas\Desktop\swigwin-3.0.2\Examples\csharp\class\obj\x86\Debug\runme.pdb

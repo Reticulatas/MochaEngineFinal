@@ -1,0 +1,47 @@
+<Filters>
+	<AssetType type='Textures'>
+		<ext>png</ext>
+		<ext>jpg</ext>
+		<ext>bmp</ext>
+		<ext>dds</ext>
+    <ext>tif</ext>
+	</AssetType>
+	<AssetType type='Materials'>
+		<ext>mat</ext>		
+	</AssetType>
+	<AssetType type='Meshes'>
+		<ext>mesh</ext>
+		<ext>bean</ext>
+	</AssetType>
+	<AssetType type='Prefabs'>
+		<ext>prefab</ext>
+	</AssetType>
+	<AssetType type='Scripts'>
+		<ext>cs</ext>
+	</AssetType>
+	<AssetType type='SubShaders'>
+		<ext>hlsl</ext>
+	</AssetType>
+	<AssetType type='Animations'>
+		<ext>anim</ext>
+	</AssetType>
+	<AssetType type='Shaders'>
+		<ext>ms</ext>
+	</AssetType>
+	<AssetType type='Levels'>
+		<ext>mocha</ext>
+	</AssetType>
+	<AssetType type='Sounds'>
+		<ext>vente</ext>
+		<ext>bank</ext>
+	</AssetType>
+	<AssetType type='RenderTargets' marshalas='Textures'>
+		<ext>mrt</ext>		
+	</AssetType>
+	<AssetType type='Fonts'>
+		<ext>ttf</ext>
+	</AssetType>
+	<AssetType type='Hulls'>
+		<ext>hull</ext>
+	</AssetType>
+</Filters>

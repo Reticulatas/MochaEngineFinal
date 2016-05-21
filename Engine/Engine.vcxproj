@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{85E42C26-E5E1-4F4D-AA96-92FA61A575ED}</ProjectGuid>
+    <RootNamespace>Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)dependencies/DirectXTK;$(SolutionDir)LibOVR\include\;$(SolutionDir)LibOVR\src\;$(SolutionDir)MochaMath;C:/Python27\include;$(WindowsSDK_IncludePath)shared;$(SolutionDir)dependencies/boost;$(SolutionDir)dependencies/sqllite;$(SolutionDir)dependencies/include;$(SolutionDir)angelscript;$(SolutionDir)MochaEditorJuce;$(SolutionDir)ret library\ret\include\;$(SolutionDir)dependencies\;$(DXSDK_DIR)include;$(SolutionDir)dependencies/fbxSdk/include;$(SolutionDir)Roaster;$(SolutionDir)dependencies\FreeType;$(SolutionDir)dependencies\SteamVR;$(IncludePath)</IncludePath>
+    <LibraryPath>C:/Python27/libs;$(SolutionDir)lib;$(VC_LibraryPath_x86);$(SolutionDir)dependencies/lib;$(SolutionDir)dependencies;$(WindowsSDK_LibraryPath_x86);$(SolutionDir)dependencies/fbxSdk/lib/x86/debug</LibraryPath>
+    <IntDir>$(SolutionDir)intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)lib\</OutDir>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>C:/Python27/libs;$(WindowsSDK_LibraryPath_x86);$(SolutionDir)dependencies;$(SolutionDir)dependencies/lib;$(SolutionDir)lib;$(VC_LibraryPath_x86);$(SolutionDir)dependencies/fbxSdk/lib/x86/release</LibraryPath>
+    <IncludePath>$(ProjectDir);$(SolutionDir)dependencies/DirectXTK;$(SolutionDir)LibOVR\include\;$(SolutionDir)LibOVR\src\;$(SolutionDir)MochaMath;C:/Python27\include;$(SolutionDir)dependencies/boost;$(SolutionDir)dependencies/include;$(SolutionDir)angelscript;$(WindowsSDK_IncludePath)shared;$(SolutionDir)MochaEditorJuce;$(SolutionDir)ret library\ret\include\;$(SolutionDir)dependencies\;$(IncludePath);$(SolutionDir)dependencies/sqllite;$(DXSDK_DIR)include;$(SolutionDir)dependencies/fbxSdk/include;$(SolutionDir)Roaster;$(SolutionDir)dependencies\FreeType;$(SolutionDir)dependencies\SteamVR</IncludePath>
+    <IntDir>$(SolutionDir)intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)lib\</OutDir>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;HAVE_ROUND;RETBOOSTSERIALIZATION;_MBCS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ShowIncludes>false</ShowIncludes>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <AdditionalOptions>/Zm200 /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sqllite3ccd.lib;XInput.lib;angelscriptd.lib;fmodex_vc.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);libfbxsdk.lib</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions> _WINSOCK_DEPRECATED_NO_WARNINGS;RETBOOSTSERIALIZATION;_MBCS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalOptions>/Zm200 /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sqllite3cc.lib;XInput.lib;angelscript.lib;fmodex_vc.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);libfbxsdk.lib</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\dependencies\include\unzip.cpp" />
+    <ClCompile Include="..\dependencies\include\zip.cpp" />
+    <ClCompile Include="AABBTree.cpp" />
+    <ClCompile Include="AdjancencyInfo.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="AnimationSubSystem.cpp" />
+    <ClCompile Include="Asset.cpp" />
+    <ClCompile Include="AssetManager.cpp" />
+    <ClCompile Include="AudioExt.cpp" />
+    <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="AvailableAssets.cpp" />
+    <ClCompile Include="Barrista.cpp" />
+    <ClCompile Include="BarristaToGo.cpp" />
+    <ClCompile Include="BaseState.cpp" />
+    <ClCompile Include="BlankState.cpp" />
+    <ClCompile Include="BoxColliderComponent.cpp" />
+    <ClCompile Include="BoxShape.cpp" />
+    <ClCompile Include="CAnimationController.cpp" />
+    <ClCompile Include="CArtifactFX.cpp" />
+    <ClCompile Include="CAudioGeometry.cpp" />
+    <ClCompile Include="CBloom.cpp" />
+    <ClCompile Include="CCamera.cpp" />
+    <ClCompile Include="CCensorFX.cpp" />
+    <ClCompile Include="CChromaticAberration.cpp" />
+    <ClCompile Include="CConvexHull.cpp" />
+    <ClCompile Include="CDiffuseRenderer.cpp" />
+    <ClCompile Include="CFilmGrain.cpp" />
+    <ClCompile Include="CFontRenderer.cpp" />
+    <ClCompile Include="CForwardRenderer.cpp" />
+    <ClCompile Include="CLight.cpp" />
+    <ClCompile Include="CMapZone.cpp" />
+    <ClCompile Include="CMeshRenderer.cpp" />
+    <ClCompile Include="CMotionBlur.cpp" />
+    <ClCompile Include="Collidar.cpp" />
+    <ClCompile Include="ColliderCom.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="CollisionFilter.cpp" />
+    <ClCompile Include="CollisionShape.cpp" />
+    <ClCompile Include="CollisionTable.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="ColorNode.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="ConstantBuffer.cpp" />
+    <ClCompile Include="ConstraintSolver.cpp" />
+    <ClCompile Include="ContactManifold.cpp" />
+    <ClCompile Include="ConvexHullPhysics.cpp" />
+    <ClCompile Include="CParticleEmitter.cpp" />
+    <ClCompile Include="CParticleRenderer.cpp" />
+    <ClCompile Include="CPhysics.cpp" />
+    <ClCompile Include="CPostProcess.cpp" />
+    <ClCompile Include="CrashHandler.cpp" />
+    <ClCompile Include="CReflectionProbe.cpp" />
+    <ClCompile Include="CRenderer.cpp" />
+    <ClCompile Include="CScript.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_SCL_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;HAVE_ROUND;RETBOOSTSERIALIZATION;_MBCS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="CShadowProbe.cpp" />
+    <ClCompile Include="CSkinMeshRenderer.cpp" />
+    <ClCompile Include="CSound.cpp" />
+    <ClCompile Include="CStreamMarker.cpp" />
+    <ClCompile Include="CStreamZone.cpp" />
+    <ClCompile Include="CSurfaceInfo.cpp" />
+    <ClCompile Include="CTemplate.cpp" />
+    <ClCompile Include="CTextureAnimation.cpp" />
+    <ClCompile Include="CTransform.cpp" />
+    <ClCompile Include="CWidget.cpp" />
+    <ClCompile Include="CWidget_Transform.cpp" />
+    <ClCompile Include="CWidget_TransformAxis.cpp" />
+    <ClCompile Include="CZone.cpp" />
+    <ClCompile Include="EditorMsgDelegators.cpp" />
+    <ClCompile Include="EditorState.cpp" />
+    <ClCompile Include="EditorSubsystem.cpp" />
+    <ClCompile Include="EditorSubsystem_Interface.cpp" />
+    <ClCompile Include="EditorSubsystem_WidgetManager.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="EngineExt.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="FrameController.cpp" />
+    <ClCompile Include="Frustum.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="GPUBufferManager.cpp" />
+    <ClCompile Include="GPUShader.cpp" />
+    <ClCompile Include="GUITransform.cpp" />
+    <ClCompile Include="InertialTensor.cpp" />
+    <ClCompile Include="InputDevice.cpp" />
+    <ClCompile Include="Island.cpp" />
+    <ClCompile Include="IZone.cpp" />
+    <ClCompile Include="JointPhysics.cpp" />
+    <ClCompile Include="KeyboardInputDevice.cpp" />
+    <ClCompile Include="LayerMask.cpp" />
+    <ClCompile Include="LineMesh.cpp" />
+    <ClCompile Include="List_Allocator.cpp" />
+    <ClCompile Include="MeshCollider.cpp" />
+    <ClCompile Include="MeshFactory.cpp" />
+    <ClCompile Include="MeshShape.cpp" />
+    <ClCompile Include="MeshShapeData.cpp" />
+    <ClCompile Include="metadef.cpp" />
+    <ClCompile Include="MJoint.cpp" />
+    <ClCompile Include="MochaWindow.cpp" />
+    <ClCompile Include="ModelLoader.cpp" />
+    <ClCompile Include="MouseInputDevice.cpp" />
+    <ClCompile Include="Oculus.cpp" />
+    <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="PauseState.cpp" />
+    <ClCompile Include="PhysicsDebugDraw.cpp" />
+    <ClCompile Include="PhysicsParam.cpp" />
+    <ClCompile Include="PhysicsScene.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="PlayerInput.cpp" />
+    <ClCompile Include="PolyheShape.cpp" />
+    <ClCompile Include="QuadraShape.cpp" />
+    <ClCompile Include="RenderTarget.cpp" />
+    <ClCompile Include="GenericUtils.cpp" />
+    <ClCompile Include="GJK.cpp" />
+    <ClCompile Include="GSM.cpp" />
+    <ClCompile Include="GUIFactory_Variables.cpp" />
+    <ClCompile Include="HelloTestModule.cpp" />
+    <ClCompile Include="IBarristaOperation.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="IntellisenseDatabase.cpp" />
+    <ClCompile Include="IRegisterable.cpp" />
+    <ClCompile Include="ISerializeable.cpp" />
+    <ClCompile Include="ISubsystem.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="MatAttribNode.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="MaterialImpl.cpp" />
+    <ClCompile Include="MemDebug.cpp" />
+    <ClCompile Include="MemMgr.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="metaany.cpp" />
+    <ClCompile Include="metadatabase.cpp" />
+    <ClCompile Include="metaobjs.cpp" />
+    <ClCompile Include="MochaException.cpp" />
+    <ClCompile Include="MochaString.cpp" />
+    <ClCompile Include="MochaStringImpl.cpp" />
+    <ClCompile Include="ObjectAllocator.cpp" />
+    <ClCompile Include="ObjectFactory.cpp" />
+    <ClCompile Include="PhysicsEngine.cpp" />
+    <ClCompile Include="Prefab.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="RendererExt.cpp" />
+    <ClCompile Include="RenderTasks.cpp" />
+    <ClCompile Include="Resolution.cpp" />
+    <ClCompile Include="RigidBody.cpp" />
+    <ClCompile Include="RigidBodyCom.cpp" />
+    <ClCompile Include="RTDebugDraw.cpp" />
+    <ClCompile Include="SAT.cpp" />
+    <ClCompile Include="ScriptSubsystem.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="ShaderManager.cpp" />
+    <ClCompile Include="ShaderNode.cpp" />
+    <ClCompile Include="Simplex.cpp" />
+    <ClCompile Include="Skeleton.cpp" />
+    <ClCompile Include="SkinnedMesh.cpp" />
+    <ClCompile Include="Smart_pointer.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="SpeechRecognition.cpp" />
+    <ClCompile Include="SphereCollider.cpp" />
+    <ClCompile Include="SphereShape.cpp" />
+    <ClCompile Include="SpriteAnimationSet.cpp" />
+    <ClCompile Include="StateSerializer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SteamViveVR.cpp" />
+    <ClCompile Include="StopWatch.cpp" />
+    <ClCompile Include="SubShader.cpp" />
+    <ClCompile Include="SupportFunction.cpp" />
+    <ClCompile Include="TextureLoader.cpp" />
+    <ClCompile Include="TextureNode.cpp" />
+    <ClCompile Include="ThreadedQueue.cpp" />
+    <ClCompile Include="ThreadUtils.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="tinyxml2\tinyxml2.cpp" />
+    <ClCompile Include="TypeRegs_ConversionHelper.cpp" />
+    <ClCompile Include="UniqueFileID.cpp" />
+    <ClCompile Include="UVTransformNode.cpp" />
+    <ClCompile Include="Vertex.cpp" />
+    <ClCompile Include="InputLayout.cpp" />
+    <ClCompile Include="VR.cpp" />
+    <ClCompile Include="XboxInputDevice.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dependencies\include\unzip.h" />
+    <ClInclude Include="..\dependencies\include\zip.h" />
+    <ClInclude Include="..\Roaster\RoasterUtility.h" />
+    <ClInclude Include="AABB.h" />
+    <ClInclude Include="AABBTree.h" />
+    <ClInclude Include="AdjancencyInfo.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationSubSystem.h" />
+    <ClInclude Include="Asset.h" />
+    <ClInclude Include="AssetEnumerator.h" />
+    <ClInclude Include="AssetHandle.h" />
+    <ClInclude Include="AssetManager.h" />
+    <ClInclude Include="AudioExt.h" />
+    <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="AvailableAssets.h" />
+    <ClInclude Include="Barrista.h" />
+    <ClInclude Include="BarristaToGo.h" />
+    <ClInclude Include="BaseState.h" />
+    <ClInclude Include="BlankState.h" />
+    <ClInclude Include="BoxColliderComponent.h" />
+    <ClInclude Include="BoxShape.h" />
+    <ClInclude Include="BroadPhasePhy.h" />
+    <ClInclude Include="CAnimationController.h" />
+    <ClInclude Include="CArtifactFX.h" />
+    <ClInclude Include="CAudioGeometry.h" />
+    <ClInclude Include="CBloom.h" />
+    <ClInclude Include="CCamera.h" />
+    <ClInclude Include="CCensorFX.h" />
+    <ClInclude Include="CChromaticAberration.h" />
+    <ClInclude Include="CConvexHull.h" />
+    <ClInclude Include="CDiffuseRenderer.h" />
+    <ClInclude Include="CFilmGrain.h" />
+    <ClInclude Include="CFontRenderer.h" />
+    <ClInclude Include="CForwardRenderer.h" />
+    <ClInclude Include="ChunkReader.h" />
+    <ClInclude Include="CLight.h" />
+    <ClInclude Include="CMapZone.h" />
+    <ClInclude Include="CMeshRenderer.h" />
+    <ClInclude Include="CMotionBlur.h" />
+    <ClInclude Include="Collidar.h" />
+    <ClInclude Include="ColliderCom.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="CollisionFilter.h" />
+    <ClInclude Include="CollisionShape.h" />
+    <ClInclude Include="CollisionTable.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="ColorNode.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="ConstantBuffer.h" />
+    <ClInclude Include="ConstraintSolver.h" />
+    <ClInclude Include="ContactLisener.h" />
+    <ClInclude Include="ContactManifold.h" />
+    <ClInclude Include="ConvexHullPhysics.h" />
+    <ClInclude Include="CParticleEmitter.h" />
+    <ClInclude Include="CParticleRenderer.h" />
+    <ClInclude Include="CPhysics.h" />
+    <ClInclude Include="CPostProcess.h" />
+    <ClInclude Include="CrashHandler.h" />
+    <ClInclude Include="CReflectionProbe.h" />
+    <ClInclude Include="CRenderer.h" />
+    <ClInclude Include="CScript.h" />
+    <ClInclude Include="CShadowProbe.h" />
+    <ClInclude Include="CSkinMeshRenderer.h" />
+    <ClInclude Include="CSound.h" />
+    <ClInclude Include="CStreamMarker.h" />
+    <ClInclude Include="CStreamZone.h" />
+    <ClInclude Include="CTemplate.h" />
+    <ClInclude Include="CTextureAnimation.h" />
+    <ClInclude Include="CTransform.h" />
+    <ClInclude Include="CWidget.h" />
+    <ClInclude Include="CWidget_Transform.h" />
+    <ClInclude Include="CWidget_TransformAxis.h" />
+    <ClInclude Include="CZone.h" />
+    <ClInclude Include="D3DUtils.h" />
+    <ClInclude Include="def.h" />
+    <ClInclude Include="DelegateDeclaration.h" />
+    <ClInclude Include="DelegateImplementation.h" />
+    <ClInclude Include="Delegates.h" />
+    <ClInclude Include="EditorMsgDelegators.h" />
+    <ClInclude Include="EditorState.h" />
+    <ClInclude Include="EditorSubsystem.h" />
+    <ClInclude Include="EditorSubsystem_Interface.h" />
+    <ClInclude Include="EditorSubsystem_WidgetManager.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="EngineExt.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventDeclaration.h" />
+    <ClInclude Include="EventImplementation.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="FrameController.h" />
+    <ClInclude Include="Frustum.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="GPUBufferManager.h" />
+    <ClInclude Include="GPUShader.h" />
+    <ClInclude Include="GUITransform.h" />
+    <ClInclude Include="InertialTensor.h" />
+    <ClInclude Include="InList.h" />
+    <ClInclude Include="InputDevice.h" />
+    <ClInclude Include="InputDeviceType.h" />
+    <ClInclude Include="Island.h" />
+    <ClInclude Include="IZone.h" />
+    <ClInclude Include="Jacobian.h" />
+    <ClInclude Include="JointPhysics.h" />
+    <ClInclude Include="KeyboardButtonTypes.h" />
+    <ClInclude Include="KeyboardInputDevice.h" />
+    <ClInclude Include="LayerMask.h" />
+    <ClInclude Include="LineMesh.h" />
+    <ClInclude Include="List_Allocator.h" />
+    <ClInclude Include="List_Assert.h" />
+    <ClInclude Include="Mass.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="MeshCollider.h" />
+    <ClInclude Include="MeshShape.h" />
+    <ClInclude Include="MeshShapeData.h" />
+    <ClInclude Include="MJoint.h" />
+    <ClInclude Include="MochaDotNetCallbacks.h" />
+    <ClInclude Include="MochaWindow.h" />
+    <ClInclude Include="ModelLoader.h" />
+    <ClInclude Include="MouseButtonTypes.h" />
+    <ClInclude Include="MouseInputDevice.h" />
+    <ClInclude Include="Noncopyable.h" />
+    <ClInclude Include="Oculus.h" />
+    <ClInclude Include="ParticleSystem.h" />
+    <ClInclude Include="PauseState.h" />
+    <ClInclude Include="PhysicsDebugDraw.h" />
+    <ClInclude Include="PhysicsFlag.h" />
+    <ClInclude Include="PhysicsMaterial.h" />
+    <ClInclude Include="PhysicsParam.h" />
+    <ClInclude Include="PhysicsScene.h" />
+    <ClInclude Include="PhysicsState.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="PlayerInput.h" />
+    <ClInclude Include="PolyheShape.h" />
+    <ClInclude Include="Pool.h" />
+    <ClInclude Include="Proxy.h" />
+    <ClInclude Include="QuadraShape.h" />
+    <ClInclude Include="Ray3.h" />
+    <ClInclude Include="RayCastResult.h" />
+    <ClInclude Include="RenderTarget.h" />
+    <ClInclude Include="GenericUtils.h" />
+    <ClInclude Include="GJK.h" />
+    <ClInclude Include="GraphicsInclude.h" />
+    <ClInclude Include="GSM.h" />
+    <ClInclude Include="GUIFactory_TypeRegs.h" />
+    <ClInclude Include="GUIFactory_Variables.h" />
+    <ClInclude Include="GUIHelper.h" />
+    <ClInclude Include="HelloTestModule.h" />
+    <ClInclude Include="IBarristaOperation.h" />
+    <ClInclude Include="IMintObjectImpl.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="IntellisenseDatabase.h" />
+    <ClInclude Include="IRegisterable.h" />
+    <ClInclude Include="ISerializeable.h" />
+    <ClInclude Include="ISubsystem.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="MatAttribNode.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="MaterialImpl.h" />
+    <ClInclude Include="MathIncludes.h" />
+    <ClInclude Include="MemDebug.h" />
+    <ClInclude Include="MemMgr.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshFactory.h" />
+    <ClInclude Include="meta.h" />
+    <ClInclude Include="metaany.h" />
+    <ClInclude Include="metadatabase.h" />
+    <ClInclude Include="metadef.h" />
+    <ClInclude Include="metaenum.h" />
+    <ClInclude Include="metafuncs.h" />
+    <ClInclude Include="metahelpers.h" />
+    <ClInclude Include="metamacrohelpers.h" />
+    <ClInclude Include="metaobjs.h" />
+    <ClInclude Include="metaremqual.h" />
+    <ClInclude Include="MochaException.h" />
+    <ClInclude Include="MochaMath.h" />
+    <ClInclude Include="MochaString.h" />
+    <ClInclude Include="MochaStringImpl.h" />
+    <ClInclude Include="ObjectAllocator.h" />
+    <ClInclude Include="ObjectFactory.h" />
+    <ClInclude Include="PhysicsEngine.h" />
+    <ClInclude Include="Prefab.h" />
+    <ClInclude Include="PropertyTable.h" />
+    <ClInclude Include="PSetters.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RendererExt.h" />
+    <ClInclude Include="RenderTasks.h" />
+    <ClInclude Include="RenderTexture.h" />
+    <ClInclude Include="Resolution.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RigidBody.h" />
+    <ClInclude Include="RigidBodyCom.h" />
+    <ClInclude Include="RTDebugDraw.h" />
+    <ClInclude Include="SAT.h" />
+    <ClInclude Include="ScriptSubsystem.h" />
+    <ClInclude Include="SerializationIncludes.h" />
+    <ClInclude Include="SerializationManager.h" />
+    <ClInclude Include="Serializations_Persistent.h" />
+    <ClInclude Include="ShaderManager.h" />
+    <ClInclude Include="SphereCollider.h" />
+    <ClInclude Include="SteamViveVR.h" />
+    <ClInclude Include="SubShader.h" />
+    <ClInclude Include="ShaderNode.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="Simplex.h" />
+    <ClInclude Include="Skeleton.h" />
+    <ClInclude Include="SkinnedMesh.h" />
+    <ClInclude Include="Smart_pointer.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="SpeechRecognition.h" />
+    <ClInclude Include="SphereShape.h" />
+    <ClInclude Include="SpriteAnimationSet.h" />
+    <ClInclude Include="StateSerializer.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StopWatch.h" />
+    <ClInclude Include="StringUtils.h" />
+    <ClInclude Include="SupportFunction.h" />
+    <ClInclude Include="Task.h" />
+    <ClInclude Include="TextureLoader.h" />
+    <ClInclude Include="TextureNode.h" />
+    <ClInclude Include="ThreadedQueue.h" />
+    <ClInclude Include="ThreadUtils.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="tinyxml2\tinyxml2.h" />
+    <ClInclude Include="TimeStep.h" />
+    <ClInclude Include="TypeRegs_ConversionHelper.h" />
+    <ClInclude Include="TypeRegs_ConversionHelper_Interface.h" />
+    <ClInclude Include="UniqueFileID.h" />
+    <ClInclude Include="UVTransformNode.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="InputLayout.h" />
+    <ClInclude Include="VR.h" />
+    <ClInclude Include="wrapper_critsection.h" />
+    <ClInclude Include="XboxButtonTypes.h" />
+    <ClInclude Include="XboxInputDevice.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\output\Assets\Shaders\light.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaAnimation_PS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaAnimation_VS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaBloom_PS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaBloom_VS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaDebug_PS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaDebug_VS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaDeferredGeometry_PS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaDeferredGeometry_VS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaDeferredLight_PS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaDeferredLight_VS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaPostProcess_PS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaPostProcess_VS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaShader.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="interfaces\Sound.i" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\output\Assets\Shaders\MochaCopyResize_PS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaCopyResize_VS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\output\Assets\Shaders\MochaGrainy_PS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaGrainy_VS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\output\Assets\Shaders\MochaCensor_PS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaCensor_VS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\output\Assets\Shaders\MochaMotionBlur_PS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaMotionBlur_VS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\output\Assets\Shaders\MochaForwardRender_PS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaForwardRender_VS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\output\Assets\Shaders\MochaDiffuseRender_PS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaDiffuseRender_VS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\output\Assets\Shaders\MochaTest_CS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\output\Assets\Shaders\MochaParticleTest_CS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\output\Assets\Shaders\MochaParticleRenderTest_GS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaParticleRenderTest_PS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\output\Assets\Shaders\MochaParticleRenderTest_VS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\output\Assets\Shaders\MochaParticleUpdate3DOrbit_CS.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\output\Assets\Shaders\MochaParticleBehaviour.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

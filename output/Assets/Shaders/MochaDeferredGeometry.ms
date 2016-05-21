@@ -1,0 +1,2 @@
+MochaDeferredGeometry_VS.hlsl
+MochaDeferredGeometry_PS.hlsl

@@ -1,0 +1,124 @@
+#include "stdafx.h"
+#include "AnimationSubSystem.h"
+#include "EditorSubsystem.h"
+
+AnimationSubSystem::AnimationSubSystem()
+{
+
+}
+
+AnimationSubSystem::~AnimationSubSystem()
+{
+
+}
+
+bool AnimationSubSystem::Tick()
+{
+  const std::list<CAnimationController*>* listAC = GSM::getInstance()->getActiveState()->GetListOfComponentsOfType<CAnimationController>();
+
+  if (listAC)
+  {
+    for (auto* iter : *listAC)
+    {
+      // Check animation controller and skin mesh is enabled
+      CSkinMeshRenderer* skinMesh = iter->gameObject->GetComponent<CSkinMeshRenderer>();
+      if (iter->isEnabled() && skinMesh && skinMesh->isEnabled())
+        Animate(iter);
+    }
+  }
+
+  return true;
+}
+
+void AnimationSubSystem::Animate(CAnimationController* animCtrler)
+{
+  float dt = FrameController::DT();
+
+  if (!animCtrler->gameObject->HasComponent<CSkinMeshRenderer>())
+	  return;
+
+  SkinnedMesh* sMesh = static_cast<SkinnedMesh*>(animCtrler->gameObject->GetComponent<CSkinMeshRenderer>()->GetMesh());
+
+  if (!sMesh || sMesh->GetMeshType() != MESH_SKINNED)
+    return;
+
+  Skeleton* skel = sMesh->GetSkeleton();
+  Animation* anim = animCtrler->GetActiveAnimation();
+
+  if (!anim)
+    return;
+
+  unsigned boneCount = Min(skel->GetBones().size(), anim->GetTracks().size());
+
+  // Increase animation timer based on dt
+  if (animCtrler->mIsPlaying)
+    animCtrler->mTimer += dt * animCtrler->mAnimSpeed;
+
+  // Restart animation if over the max duration
+  if (animCtrler->mTimer > anim->GetDuration())
+    animCtrler->mTimer = 0;
+
+  // Interpolate between key frames
+  animCtrler->mFinalTransforms.resize(boneCount);
+  InterpolateKeyFrames(anim, animCtrler->mTimer, animCtrler->mFinalTransforms);
+
+  // Hierarchical concatenation
+  for (unsigned i = 1; i < boneCount; ++i)
+  {
+    int parentIndex = skel->GetBones()[i].mParentIndex;
+
+    if (parentIndex == -1)
+      continue;
+
+    animCtrler->mFinalTransforms[i] = animCtrler->mFinalTransforms[parentIndex] * animCtrler->mFinalTransforms[i];
+  }
+}
+
+void AnimationSubSystem::InterpolateKeyFrames(Animation* anim, float t, std::vector<VQS>& boneTransforms)
+{
+  for (unsigned i = 0; i < boneTransforms.size(); ++i)
+  {
+<<<<<<< local
+    std::vector<KeyFrame>& keyFrames = anim->GetTracks()[i].mKeyFrames;
+=======
+    const std::vector<KeyFrame>& keyFrames = anim->GetTracks()[i].mKeyFrames;
+>>>>>>> other
+
+    // Cap it between start and end times
+    if (t <= keyFrames.front().Time)
+    {
+      boneTransforms[i] = keyFrames.front().LocalTransform;
+    }
+    else if (t >= keyFrames.back().Time)
+    {
+      boneTransforms[i] = keyFrames.back().LocalTransform;
+    }
+    else
+    {
+      for (unsigned j = 0; j < keyFrames.size() - 1; ++j)
+      {
+        if (t >= keyFrames[j].Time && t <= keyFrames[j + 1].Time)
+        {
+          float lerpPercent = (t - keyFrames[j].Time) / (keyFrames[j + 1].Time - keyFrames[j].Time);
+
+          boneTransforms[i].v = Lerp(keyFrames[j].LocalTransform.v, keyFrames[j + 1].LocalTransform.v, lerpPercent);
+          boneTransforms[i].q = Slerp(keyFrames[j].LocalTransform.q, keyFrames[j + 1].LocalTransform.q, lerpPercent);
+
+          break;
+        }
+      }
+    }
+  }
+}
+
+AnimationSubSystem* AnimationSubSystem::getInstance()
+{
+  static AnimationSubSystem* instance = 0;
+
+  if (!instance)
+    instance = new AnimationSubSystem();
+
+  return instance;
+}
+
+meta_define(AnimationSubSystem);

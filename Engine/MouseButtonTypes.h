@@ -1,0 +1,39 @@
+#ifndef MOUSEBUTTONTYPES_H
+#define MOUSEBUTTONTYPES_H
+
+#ifdef FOREACH_BBUTTON
+#undef FOREACH_BBUTTON
+#endif
+
+#ifdef FOREACH_ABUTTON
+#undef FOREACH_ABUTTON
+#endif
+
+#define FOREACH_BBUTTON(BUTTON)\
+        BUTTON(MBB_LEFT)\
+        BUTTON(MBB_RIGHT)\
+        BUTTON(MBB_MIDDLE)\
+        BUTTON(MBB_X1)\
+        BUTTON(MBB_X2)\
+        BUTTON(MBB_TOTAL)\
+
+#define FOREACH_ABUTTON(BUTTON)\
+        BUTTON(MAB_X)\
+        BUTTON(MAB_Y)\
+        BUTTON(MAB_WHEEL)\
+        BUTTON(MAB_TOTAL)\
+
+
+#define GENERATE_ENUM(ENUM) ENUM,
+
+enum Mouse_BButtons
+{
+    FOREACH_BBUTTON(GENERATE_ENUM)
+};
+
+enum Mouse_AButtons
+{
+    FOREACH_ABUTTON(GENERATE_ENUM)
+};
+
+#endif

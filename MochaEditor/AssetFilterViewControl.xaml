@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="MochaEditor.AssetFilterViewControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mocha="clr-namespace:MochaEditor"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" DataContext="{Binding RelativeSource={RelativeSource Self}}"
+             Loaded="UserControl_Loaded">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/DataTemplateDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        <ItemsPanelTemplate x:Key="DetailsPanelTemplate">
+            <WrapPanel Grid.IsSharedSizeScope="True" />
+        </ItemsPanelTemplate>
+        <ItemsPanelTemplate x:Key="GridPanelTemplate">
+            <WrapPanel ItemWidth="{Binding rowsInGrid}" ItemHeight="{Binding rowsInGrid}"/>
+        </ItemsPanelTemplate>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <Border BorderThickness="1">
+                <Button Content="Clear" Name="ClearFilterControl" Click="ClearFilterControl_Click" />
+            </Border>
+            <TextBox Name="FilterControl" Text="*coffee filter*" DockPanel.Dock="Left" TextChanged="FilterControl_TextChanged" Foreground="Gray"/>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Bottom">
+            <ComboBox DockPanel.Dock="Left" SelectedIndex="0" SelectionChanged="ViewTypesComboBox_SelectionChanged"  Name="ViewTypesComboBox">
+                <ComboBox.Items>
+                    <ComboBoxItem Content="Details"/>
+                    <ComboBoxItem Content="Grid"/>
+                </ComboBox.Items>
+            </ComboBox>
+            <Slider Value="{Binding rowsInGrid,Mode=TwoWay}" Maximum="200" Minimum="40" Margin="1"/>
+        </DockPanel>
+        <ListView Name="FilterView" ScrollViewer.HorizontalScrollBarVisibility="Disabled" PreviewMouseLeftButtonDown="FilterView_PreviewMouseLeftButtonDown" PreviewMouseMove="FilterView_PreviewMouseMove"
+                  VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling" VirtualizingPanel.ScrollUnit="Item" MouseDoubleClick="OnItemDoubleClick"
+                  
+                  ItemsPanel="{StaticResource DetailsPanelTemplate}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition SharedSizeGroup="AssetIconColSize"/>
+                        </Grid.ColumnDefinitions>
+                    <DockPanel>
+                        <TextBlock Text="{Binding filename}" DockPanel.Dock="Top"
+                                   />
+                        <Image Source="{Binding img}"/>
+                    </DockPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </DockPanel>
+</UserControl>

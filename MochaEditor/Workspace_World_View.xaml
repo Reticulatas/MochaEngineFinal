@@ -1,0 +1,99 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock" 
+             xmlns:mocha="clr-namespace:MochaEditor"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:Default="clr-namespace:MochaEditor" x:Class="MochaEditor.Workspace_World_View"
+             mc:Ignorable="d" 
+             d:DesignHeight="455" d:DesignWidth="647">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="GameObjectItemTemplate" TargetType="{x:Type ListView}">
+                <Grid Margin="0,0,10,250">
+                    <Grid.Resources>
+                        <Style x:Key="NameStyle" TargetType="{x:Type Label}">
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="RenderTransform">
+                                        <Setter.Value>
+                                            <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Grid.Resources>
+                    <Label Style="{StaticResource NameStyle}" HorizontalAlignment="Left" Margin="10,10,0,-40" VerticalAlignment="Top" Height="30" Width="180" Content="{Binding mName}"/>
+                </Grid>
+            </ControlTemplate>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <xcad:DockingManager>
+        <xcad:DockingManager.Theme>
+            <xcad:ExpressionDarkTheme/>
+        </xcad:DockingManager.Theme>
+        <xcad:LayoutRoot>
+            <xcad:LayoutPanel Orientation="Horizontal"
+					DockHeight="*">
+                <xcad:LayoutAnchorablePaneGroup DockWidth="150"
+						Orientation="Vertical">
+                    <xcad:LayoutAnchorablePane>
+                        <xcad:LayoutAnchorable Title="Hierarchy">
+                            <mocha:GameObjectViewControl/>
+                        </xcad:LayoutAnchorable>
+                        <xcad:LayoutAnchorable Title="Assets">
+                            <mocha:AssetsViewer/>
+                        </xcad:LayoutAnchorable>
+                    </xcad:LayoutAnchorablePane>
+                </xcad:LayoutAnchorablePaneGroup>
+                <xcad:LayoutPanel Orientation="Vertical">
+                    <xcad:LayoutDocumentPaneGroup>
+                        <xcad:LayoutDocumentPane>
+                            <xcad:LayoutDocument Title="Editor">
+                                <mocha:EngineControl/>
+                            </xcad:LayoutDocument>
+                        </xcad:LayoutDocumentPane>
+                    </xcad:LayoutDocumentPaneGroup>
+                    <xcad:LayoutDocumentPaneGroup DockHeight="50">
+                        <xcad:LayoutDocumentPane>
+                            <xcad:LayoutDocument Title="Assets">
+                                <mocha:AssetManagerControl/>
+                            </xcad:LayoutDocument>
+                            <xcad:LayoutDocument Title="Console">
+                                <mocha:LogControl/>
+                            </xcad:LayoutDocument>
+                        </xcad:LayoutDocumentPane>
+                        <xcad:LayoutDocumentPane DockWidth="0.3*">
+                            <xcad:LayoutDocument Title="Test">
+                                <mocha:TestPanel/>
+                            </xcad:LayoutDocument>
+                        <xcad:LayoutDocument Title="Game">
+                            <mocha:GameControlPanel/>
+                        </xcad:LayoutDocument>
+                        <xcad:LayoutDocument Title="Tools">
+                                <mocha:MassRenamer/>
+                            </xcad:LayoutDocument>
+                        </xcad:LayoutDocumentPane>
+                    </xcad:LayoutDocumentPaneGroup>
+                </xcad:LayoutPanel>
+
+                <xcad:LayoutAnchorablePaneGroup DockWidth="270"
+						Orientation="Vertical">
+                    <xcad:LayoutAnchorablePane>
+                        <xcad:LayoutAnchorable Title="Properties">
+                            <mocha:ComponentPropertiesControl />
+                        </xcad:LayoutAnchorable>
+                        <xcad:LayoutAnchorable Title="Multi Properties">
+                            <!--<mocha:MultiPropertiesControl/>-->
+                        </xcad:LayoutAnchorable>
+                    </xcad:LayoutAnchorablePane>
+                </xcad:LayoutAnchorablePaneGroup>
+            </xcad:LayoutPanel>
+
+        </xcad:LayoutRoot>
+    </xcad:DockingManager>
+</UserControl>

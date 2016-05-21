@@ -1,0 +1,126 @@
+﻿<UserControl x:Class="MochaEditor.DataNodeControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mocha="clr-namespace:MochaEditor"
+             xmlns:ec="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:ncore="http://schemas.ncore.com/wpf/xaml/colorbox"
+             mc:Ignorable="d"  Loaded="UserControl_Loaded"
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <!-- Various methods for displaying the content, instantiate to view stlying -->
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <mocha:ColorConverter x:Key="DNColorConverter" />
+            <mocha:NonToNullableConverter x:Key="nonNullConv"/>
+            <mocha:PropertyInfoToPS x:Key="pips"/>
+            <mocha:FloatToDoubleConverter x:Key="ftdc"/>
+            <mocha:EnumToObservableConverter x:Key="etoc"/>
+            <mocha:NumericUnsignedToSignedConverter x:Key="uinttointconv"/>
+            <mocha:MochaHintConverter x:Key="hintconv"/>
+            <mocha:PropertyNameSanitizerConverter x:Key="SanitizeNameConv"/>
+            <mocha:Vector3ToMochaVec3Conv x:Key="v3tomv3conv"/>
+            <mocha:ValueConverterGroup x:Key="ftdcAndhint">
+                <mocha:FloatToDoubleConverter/>
+                <mocha:MochaHintConverter/>
+            </mocha:ValueConverterGroup>
+            <DataTemplate x:Key="PS_RecurseProps">
+                <mocha:PS_RecurseProperties DataContext="{Binding Path=PropertyValue, UpdateSourceTrigger=PropertyChanged}"/>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_Decimal">
+                <ec:DoubleUpDown Value="{Binding Path=PropertyValue, Converter={StaticResource ftdc}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                             Style="{StaticResource ResourceKey=MochaTextBox}" />
+            </DataTemplate>
+            <DataTemplate x:Key="PS_Unsigned">
+                <ec:IntegerUpDown Value="{Binding Path=PropertyValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,
+                                    Converter={StaticResource uinttointconv}}"
+                                  Foreground="WhiteSmoke" Background="Transparent" Minimum="0"/>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_WholeNumber">
+                <ec:IntegerUpDown Value="{Binding Path=PropertyValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                  Foreground="WhiteSmoke" Background="Transparent"/>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_String">
+                <TextBox Text="{Binding Path=PropertyValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_Color">
+                <!--<ec:ColorPicker ColorMode="ColorCanvas"
+                SelectedColor="{Binding Path=PropertyValue, Mode=TwoWay, Converter={StaticResource DNColorConverter}, UpdateSourceTrigger=PropertyChanged}"/>-->
+                <ncore:ColorBox x:Name="ColorCanvas" Color ="{Binding Path=PropertyValue, Mode=TwoWay, Converter={StaticResource DNColorConverter}, UpdateSourceTrigger=PropertyChanged}"/>
+                
+            </DataTemplate>
+            <DataTemplate x:Key="PS_Vector2">
+                <StackPanel Orientation="Horizontal">
+                    <ec:DecimalUpDown Value="{Binding Path=PropertyValue.x, Mode=TwoWay}" Increment="0.1" 
+                                      Style="{StaticResource MochaDecTextBox}"/>
+                    <ec:DecimalUpDown Value="{Binding Path=PropertyValue.y, Mode=TwoWay}" Increment="0.1" 
+                                      Style="{StaticResource MochaDecTextBox}"/>
+                </StackPanel>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_Vector3">
+                <StackPanel Orientation="Horizontal" DataContext="{Binding Path=., Converter={StaticResource v3tomv3conv}}">
+                    <ec:DecimalUpDown Value="{Binding Path=.[0], Mode=TwoWay}" Increment="0.1" 
+                                      Style="{StaticResource MochaDecTextBox}" ValueChanged="DecimalUpDown_ValueChanged"/>
+                    <ec:DecimalUpDown Value="{Binding Path=.[1], Mode=TwoWay}" Increment="0.1" 
+                                      Style="{StaticResource MochaDecTextBox}" ValueChanged="DecimalUpDown_ValueChanged"/>
+                    <ec:DecimalUpDown Value="{Binding Path=.[2], Mode=TwoWay}" Increment="0.1" 
+                                      Style="{StaticResource MochaDecTextBox}" ValueChanged="DecimalUpDown_ValueChanged"/>
+                </StackPanel>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_MochaVec3">
+                <StackPanel Orientation="Horizontal">
+                    <ec:DecimalUpDown Value="{Binding Path=PropertyValue.x, Mode=TwoWay}" Increment="0.1" 
+                                      Style="{StaticResource MochaDecTextBox}"/>
+                    <ec:DecimalUpDown Value="{Binding Path=PropertyValue.y, Mode=TwoWay}" Increment="0.1" 
+                                      Style="{StaticResource MochaDecTextBox}"/>
+                    <ec:DecimalUpDown Value="{Binding Path=PropertyValue.z, Mode=TwoWay}" Increment="0.1" 
+                                      Style="{StaticResource MochaDecTextBox}"/>
+                </StackPanel>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_EulerAngles">
+                <StackPanel Orientation="Horizontal">
+                    <ec:DecimalUpDown Value="{Binding Path=PropertyValue.Angles.x, Mode=TwoWay}" Increment="0.1"
+                                      Style="{StaticResource MochaDecTextBox}"/>
+                    <ec:DecimalUpDown Value="{Binding Path=PropertyValue.Angles.y, Mode=TwoWay}" Increment="0.1"
+                                      Style="{StaticResource MochaDecTextBox}"/>
+                    <ec:DecimalUpDown Value="{Binding Path=PropertyValue.Angles.z, Mode=TwoWay}" Increment="0.1"
+                                      Style="{StaticResource MochaDecTextBox}"/>
+                </StackPanel>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_Boolean">
+                <CheckBox IsChecked="{Binding Path=PropertyValue, Mode=TwoWay}"/>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_Container">
+                <mocha:PS_Container DataContext="{Binding Path=., Mode=TwoWay}"/>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_AssetHandle">
+                <mocha:PS_AssetHandle DataContext="{Binding Path=.}"/>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_Enum">
+                <mocha:PS_Enum DataContext="{Binding Path=.}"/>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_NULLPTR">
+                <Button Content="nullptr" Name="PS_NULLPTR_BUTTON" Click="PS_NULLPTR_BUTTON_Click"/>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_Material">
+                <mocha:PS_Material DataContext="{Binding Path=PropertyValue}"/>
+            </DataTemplate>
+            <DataTemplate x:Key="PS_ScriptProperties">
+                <mocha:PS_ScriptProperties DataContext="{Binding Path=.}"/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition SharedSizeGroup="DataNode_Col_ID"/>
+            <ColumnDefinition SharedSizeGroup="DataNode_Col_Content"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="{Binding PropertyName, Converter={StaticResource SanitizeNameConv}}" MinWidth="50" TextTrimming="CharacterEllipsis" Grid.Column="0"/>
+        <ContentControl HorizontalAlignment="Right" DataContext="{Binding Path=., Converter={StaticResource hintconv}}" Name="DataControlPanel" Grid.Column="1"/>
+    </Grid>
+</UserControl>

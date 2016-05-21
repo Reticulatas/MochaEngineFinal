@@ -1,0 +1,183 @@
+﻿Build started 11/7/2014 2:34:07 PM.
+     1>Project "C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Projects\Win32\VS2013\LibOVR.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Performing Custom Build Tools
+         Compiling shader and packing into header: C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\DistortionChroma_ps.psh
+         compilation object save succeeded; see C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\DistortionChroma_ps
+         Generating shader reflection data for DistortionChroma_ps
+         Successfully serialized shader reflection info: DistortionChroma_ps_refl.h
+         Performing Custom Build Tools
+         Compiling shader and packing into header: C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\DistortionChroma_vs.vsh
+         compilation object save succeeded; see C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\DistortionChroma_vs
+         Generating shader reflection data for DistortionChroma_vs
+         Successfully serialized shader reflection info: DistortionChroma_vs_refl.h
+         Performing Custom Build Tools
+         Compiling shader and packing into header: C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\DistortionTimewarpChroma_vs.vsh
+         compilation object save succeeded; see C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\DistortionTimewarpChroma_vs
+         Generating shader reflection data for DistortionTimewarpChroma_vs
+         Successfully serialized shader reflection info: DistortionTimewarpChroma_vs_refl.h
+         Performing Custom Build Tools
+         Compiling shader and packing into header: C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\DistortionTimewarp_vs.vsh
+         compilation object save succeeded; see C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\DistortionTimewarp_vs
+         Generating shader reflection data for DistortionTimewarp_vs
+         Successfully serialized shader reflection info: DistortionTimewarp_vs_refl.h
+         Performing Custom Build Tools
+         Compiling shader and packing into header: C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\Distortion_ps.psh
+         compilation object save succeeded; see C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\Distortion_ps
+         Generating shader reflection data for Distortion_ps
+         Did not get a constant buffer from shader: Distortion_psPerforming Custom Build Tools
+         Compiling shader and packing into header: C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\Distortion_vs.vsh
+         compilation object save succeeded; see C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\Distortion_vs
+         Generating shader reflection data for Distortion_vs
+         Successfully serialized shader reflection info: Distortion_vs_refl.h
+         Performing Custom Build Tools
+         Compiling shader and packing into header: C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\SimpleQuad_ps.psh
+         compilation object save succeeded; see C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\SimpleQuad_ps
+         Generating shader reflection data for SimpleQuad_ps
+         Successfully serialized shader reflection info: SimpleQuad_ps_refl.h
+         Performing Custom Build Tools
+         Compiling shader and packing into header: C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\SimpleQuad_vs.vsh
+         compilation object save succeeded; see C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\SimpleQuad_vs
+         Generating shader reflection data for SimpleQuad_vs
+         Successfully serialized shader reflection info: SimpleQuad_vs_refl.h
+         Performing Custom Build Tools
+         Compiling shader and packing into header: C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\SimpleTexturedQuad_ps.psh
+         compilation object save succeeded; see C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\SimpleTexturedQuad_ps
+         Generating shader reflection data for SimpleTexturedQuad_ps
+         Successfully serialized shader reflection info: SimpleTexturedQuad_ps_refl.h
+         Performing Custom Build Tools
+         Compiling shader and packing into header: C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\SimpleTexturedQuad_vs.vsh
+         compilation object save succeeded; see C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Src\CAPI\D3D1X\Shaders\SimpleTexturedQuad_vs
+         Generating shader reflection data for SimpleTexturedQuad_vs
+         Successfully serialized shader reflection info: SimpleTexturedQuad_vs_refl.h
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../../../3rdParty/glext/ /Z7 /nologo /W4 /WX- /MP /Od /Oy- /D OVR_BUILD_DEBUG /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"../../../Obj/Win32/VS2013/Debug/" /Fd"../../../Obj/Win32/VS2013/Debug/vc120.pdb" /Gd /TP /analyze- /Zl /errorReport:prompt ..\..\..\Src\CAPI\CAPI_DistortionRenderer.cpp ..\..\..\Src\CAPI\CAPI_FrameTimeManager.cpp ..\..\..\Src\CAPI\CAPI_HMDRenderState.cpp ..\..\..\Src\CAPI\CAPI_HMDState.cpp ..\..\..\Src\CAPI\CAPI_HSWDisplay.cpp ..\..\..\Src\CAPI\CAPI_LatencyStatistics.cpp ..\..\..\Src\CAPI\D3D1X\CAPI_D3D10_DistortionRenderer.cpp ..\..\..\Src\CAPI\D3D1X\CAPI_D3D10_HSWDisplay.cpp ..\..\..\Src\CAPI\D3D1X\CAPI_D3D11_DistortionRenderer.cpp ..\..\..\Src\CAPI\D3D1X\CAPI_D3D11_HSWDisplay.cpp ..\..\..\Src\CAPI\D3D9\CAPI_D3D9_DistortionRenderer.cpp ..\..\..\Src\CAPI\D3D9\CAPI_D3D9_HSWDisplay.cpp ..\..\..\Src\CAPI\D3D9\CAPI_D3D9_Util.cpp ..\..\..\Src\CAPI\GL\CAPI_GL_DistortionRenderer.cpp ..\..\..\Src\CAPI\GL\CAPI_GL_HSWDisplay.cpp ..\..\..\Src\CAPI\GL\CAPI_GL_Util.cpp ..\..\..\Src\Displays\OVR_Win32_Display.cpp ..\..\..\Src\Displays\OVR_Win32_FocusReader.cpp ..\..\..\Src\Displays\OVR_Win32_RenderShim.cpp ..\..\..\Src\Displays\OVR_Win32_ShimFunctions.cpp ..\..\..\Src\Kernel\OVR_Alg.cpp ..\..\..\Src\Kernel\OVR_Allocator.cpp ..\..\..\Src\Kernel\OVR_Atomic.cpp ..\..\..\Src\Kernel\OVR_CRC32.cpp ..\..\..\Src\Kernel\OVR_File.cpp ..\..\..\Src\Kernel\OVR_FileFILE.cpp ..\..\..\Src\Kernel\OVR_Lockless.cpp ..\..\..\Src\Kernel\OVR_Log.cpp ..\..\..\Src\Kernel\OVR_Math.cpp ..\..\..\Src\Kernel\OVR_RefCount.cpp ..\..\..\Src\Kernel\OVR_SharedMemory.cpp ..\..\..\Src\Kernel\OVR_Std.cpp ..\..\..\Src\Kernel\OVR_String.cpp ..\..\..\Src\Kernel\OVR_String_FormatUtil.cpp ..\..\..\Src\Kernel\OVR_String_PathUtil.cpp ..\..\..\Src\Kernel\OVR_SysFile.cpp ..\..\..\Src\Kernel\OVR_System.cpp ..\..\..\Src\Kernel\OVR_ThreadCommandQueue.cpp ..\..\..\Src\Kernel\OVR_ThreadsWinAPI.cpp ..\..\..\Src\Kernel\OVR_Timer.cpp ..\..\..\Src\Kernel\OVR_UTF8Util.cpp ..\..\..\Src\Net\OVR_BitStream.cpp ..\..\..\Src\Net\OVR_NetworkPlugin.cpp ..\..\..\Src\Net\OVR_PacketizedTCPSocket.cpp ..\..\..\Src\Net\OVR_RPC1.cpp ..\..\..\Src\Net\OVR_Session.cpp ..\..\..\Src\Net\OVR_Socket.cpp ..\..\..\Src\Net\OVR_Win32_Socket.cpp ..\..\..\Src\OVR_CAPI.cpp ..\..\..\Src\OVR_JSON.cpp ..\..\..\Src\OVR_Profile.cpp ..\..\..\Src\OVR_SerialFormat.cpp ..\..\..\Src\OVR_Stereo.cpp ..\..\..\Src\Service\Service_NetClient.cpp ..\..\..\Src\Service\Service_NetSessionCommon.cpp ..\..\..\Src\Tracking\Tracking_SensorStateReader.cpp ..\..\..\Src\Util\Util_ImageWindow.cpp ..\..\..\Src\Util\Util_Interface.cpp ..\..\..\Src\Util\Util_LatencyTest2Reader.cpp ..\..\..\Src\Util\Util_Render_Stereo.cpp ..\..\..\Src\Util\Util_SystemInfo.cpp
+         CAPI_DistortionRenderer.cpp
+         CAPI_FrameTimeManager.cpp
+         CAPI_HMDRenderState.cpp
+         CAPI_HMDState.cpp
+         CAPI_HSWDisplay.cpp
+         CAPI_LatencyStatistics.cpp
+         CAPI_D3D10_DistortionRenderer.cpp
+         CAPI_D3D10_HSWDisplay.cpp
+         CAPI_D3D11_DistortionRenderer.cpp
+         CAPI_D3D11_HSWDisplay.cpp
+         CAPI_D3D9_DistortionRenderer.cpp
+         CAPI_D3D9_HSWDisplay.cpp
+         CAPI_D3D9_Util.cpp
+         CAPI_GL_DistortionRenderer.cpp
+         CAPI_GL_HSWDisplay.cpp
+         CAPI_GL_Util.cpp
+         OVR_Win32_Display.cpp
+         OVR_Win32_FocusReader.cpp
+         OVR_Win32_RenderShim.cpp
+         OVR_Win32_ShimFunctions.cpp
+         OVR_Alg.cpp
+         OVR_Allocator.cpp
+         OVR_Atomic.cpp
+         OVR_CRC32.cpp
+         OVR_File.cpp
+         OVR_FileFILE.cpp
+         OVR_Lockless.cpp
+         OVR_Log.cpp
+         OVR_Math.cpp
+         OVR_RefCount.cpp
+         OVR_SharedMemory.cpp
+         OVR_Std.cpp
+         OVR_String.cpp
+         OVR_String_FormatUtil.cpp
+         OVR_String_PathUtil.cpp
+         OVR_SysFile.cpp
+         OVR_System.cpp
+         OVR_ThreadCommandQueue.cpp
+         OVR_ThreadsWinAPI.cpp
+         OVR_Timer.cpp
+         OVR_UTF8Util.cpp
+         OVR_BitStream.cpp
+         OVR_NetworkPlugin.cpp
+         OVR_PacketizedTCPSocket.cpp
+         OVR_RPC1.cpp
+         OVR_Session.cpp
+         OVR_Socket.cpp
+         OVR_Win32_Socket.cpp
+         OVR_CAPI.cpp
+         OVR_JSON.cpp
+         OVR_Profile.cpp
+         OVR_SerialFormat.cpp
+         OVR_Stereo.cpp
+         Service_NetClient.cpp
+         Service_NetSessionCommon.cpp
+         Tracking_SensorStateReader.cpp
+         Util_ImageWindow.cpp
+         Util_Interface.cpp
+         Util_LatencyTest2Reader.cpp
+         Util_Render_Stereo.cpp
+         Util_SystemInfo.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"../../../Lib/Win32/VS2013/libovrd.lib" Setupapi.lib /NOLOGO ../../../Obj/Win32/VS2013/Debug/CAPI_DistortionRenderer.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_FrameTimeManager.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_HMDRenderState.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_HMDState.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_HSWDisplay.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_LatencyStatistics.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_D3D10_DistortionRenderer.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_D3D10_HSWDisplay.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_D3D11_DistortionRenderer.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_D3D11_HSWDisplay.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_D3D9_DistortionRenderer.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_D3D9_HSWDisplay.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_D3D9_Util.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_GL_DistortionRenderer.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_GL_HSWDisplay.obj
+         ../../../Obj/Win32/VS2013/Debug/CAPI_GL_Util.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Win32_Display.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Win32_FocusReader.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Win32_RenderShim.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Win32_ShimFunctions.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Alg.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Allocator.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Atomic.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_CRC32.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_File.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_FileFILE.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Lockless.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Log.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Math.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_RefCount.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_SharedMemory.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Std.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_String.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_String_FormatUtil.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_String_PathUtil.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_SysFile.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_System.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_ThreadCommandQueue.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_ThreadsWinAPI.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Timer.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_UTF8Util.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_BitStream.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_NetworkPlugin.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_PacketizedTCPSocket.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_RPC1.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Session.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Socket.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Win32_Socket.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_CAPI.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_JSON.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Profile.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_SerialFormat.obj
+         ../../../Obj/Win32/VS2013/Debug/OVR_Stereo.obj
+         ../../../Obj/Win32/VS2013/Debug/Service_NetClient.obj
+         ../../../Obj/Win32/VS2013/Debug/Service_NetSessionCommon.obj
+         ../../../Obj/Win32/VS2013/Debug/Tracking_SensorStateReader.obj
+         ../../../Obj/Win32/VS2013/Debug/Util_ImageWindow.obj
+         ../../../Obj/Win32/VS2013/Debug/Util_Interface.obj
+         ../../../Obj/Win32/VS2013/Debug/Util_LatencyTest2Reader.obj
+         ../../../Obj/Win32/VS2013/Debug/Util_Render_Stereo.obj
+         ../../../Obj/Win32/VS2013/Debug/Util_SystemInfo.obj
+         LibOVR.vcxproj -> C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Projects\Win32\VS2013\../../../Lib/Win32/VS2013/libovrd.lib
+     1>Done Building Project "C:\Users\Kenneth\Desktop\rift shit\ovr_sdk_win_0.4.3\OculusSDK\LibOVR\Projects\Win32\VS2013\LibOVR.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.92

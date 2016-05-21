@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="MochaEditor.GameObjectViewItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <StackPanel Orientation="Vertical" MouseRightButtonDown="StackPanel_MouseRightButtonDown">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="Expanding">
+                <VisualStateGroup.Transitions>
+                    <VisualTransition From="Collapsed" To="Expanded" GeneratedDuration="0:0:1">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Duration="0:0:0" Storyboard.TargetName="Expanded_Content" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="{x:Static Visibility.Visible}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualTransition>
+                </VisualStateGroup.Transitions>
+
+                <VisualState x:Name="Collapsed">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Duration="0:0:0" Storyboard.TargetName="Expanded_Content" Storyboard.TargetProperty="(UIElement.Visibility)">
+                            <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="{x:Static Visibility.Collapsed}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Expanded">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Duration="0:0:0" Storyboard.TargetName="Expanded_Content" Storyboard.TargetProperty="(UIElement.Visibility)">
+                            <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="{x:Static Visibility.Visible}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <StackPanel Orientation="Horizontal" Height="20" >
+            <TextBlock Text="{Binding mName}" Height="20" MinWidth="100" Style="{StaticResource ResourceKey=GrowingTextStyle}" FontSize="13"
+                       Foreground="AntiqueWhite">
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Name="Expanded_Content" Visibility="Collapsed">
+            <GroupBox Header="^" HorizontalAlignment="Center" HorizontalContentAlignment="Center"
+                       BorderThickness="0" BorderBrush="DarkGray" Foreground="DarkSlateGray" Background="DarkGray">
+                <StackPanel Orientation="Vertical">
+                    <Button Name="DeleteButton" Content="delete" Click="Delete_Click"/>
+                    <Button Content="duplicate" Name="DuplicateButton" Click="DuplicateButton_Click"/>
+                    <Button Content="detach" Name="NoParentButton" Click="NoParentButton_Click"/>
+                    <Button Content="make prefab" Name="MakePrefabButton" Click="MakePrefabButton_Click"/>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

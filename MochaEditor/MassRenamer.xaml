@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="MochaEditor.MassRenamer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ex="http://schemas.xceed.com/wpf/xaml/toolkit"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <ScrollViewer>
+        <StackPanel HorizontalAlignment="Center" Margin="5">
+            <StackPanel.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground" Value="AntiqueWhite"/>
+                    <Setter Property="Margin" Value="3"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text="Append: "/>
+            <TextBox Name="AppendText"/>
+            <TextBlock Text="Prefix: "/>
+            <TextBox Name="PrefixText"/>
+            <TextBlock Text="Replace With: "/>
+            <TextBox Name="ReplaceText"/>
+            <CheckBox Name="AppendNumbers" Content="Append Numbers"/>
+            <Line StrokeThickness="4" Margin="4" Stroke="AntiqueWhite"/>
+            <Button Name="CommitButton" Content="Commit" Click="CommitButton_Click"/>
+            <Line StrokeThickness="5"/>
+            <TextBlock Text="HackButton"/>
+            <TextBlock Text="Name of texture:" />
+            <TextBox Name="TextureRoughSettor"/>
+            <TextBlock Text="Texture Node Index: "/>
+            <ex:IntegerUpDown Name="TextureIndex" Text="TextureNodeIndex"/>
+            <Button Content="Hack" Name="HackButton" Click="HackButton_Click"/>
+            <TextBlock Text="Regex selector"/>
+            <TextBox Name="RegexName"/>
+            <Button Content="Select All With (above)" Name="SelectName" Click="SelectName_Click"/>
+            <ex:DecimalUpDown Name="PosX" />
+            <ex:DecimalUpDown Name="PosY" />
+            <ex:DecimalUpDown Name="PosZ" />
+            <Button Name="ShiftPosButton" Content="Shift Position By ^" Click="ShiftPosButton_Click"/>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

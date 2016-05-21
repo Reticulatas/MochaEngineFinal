@@ -1,0 +1,6 @@
+C:\Users\Fuller\Desktop\mochagame\MochaStudio\output\subjectREDACTED.exe.config
+C:\Users\Fuller\Desktop\mochagame\MochaStudio\output\subjectREDACTED.exe
+C:\Users\Fuller\Desktop\mochagame\MochaStudio\output\subjectREDACTED.pdb
+C:\Users\Fuller\Desktop\mochagame\MochaStudio\MochaEngine\obj\Release\MochaEngine.csprojResolveAssemblyReference.cache
+C:\Users\Fuller\Desktop\mochagame\MochaStudio\MochaEngine\obj\Release\subjectREDACTED.exe
+C:\Users\Fuller\Desktop\mochagame\MochaStudio\MochaEngine\obj\Release\subjectREDACTED.pdb

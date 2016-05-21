@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="MochaEditor.CommandMenuItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="300">
+    <UniformGrid DataContext="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, Path=bound_command}" Rows="1" MouseLeftButtonUp="UniformGrid_MouseLeftButtonUp">
+        <TextBlock Text="{Binding descriptiveName}" Foreground="AntiqueWhite"/>
+        <TextBlock Text="{Binding hotKeyText}" Foreground="Gray" Margin="5,0,0,0"/>
+    </UniformGrid>
+</UserControl>

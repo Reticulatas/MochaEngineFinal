@@ -1,0 +1,50 @@
+﻿<Application x:Class="MochaEditor.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ae="clr-namespace:ICSharpCode.AvalonEdit.CodeCompletion;assembly=ICSharpCode.AvalonEdit"
+             xmlns:mocha="clr-namespace:MochaEditor"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             StartupUri="MainWindow.xaml" Startup="StartupHandler"
+             Activated="OnWindowFocused"
+             Deactivated="OnWindowUnfocused">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- default font -->
+            <Style TargetType="{x:Type mui:ModernWindow}">
+                <Setter Property="FontFamily" Value="Corbel"/>
+                <Setter Property="FontSize" Value="12"/>
+            </Style>
+            <Style TargetType="{x:Type Menu}">
+                <Setter Property="Background" Value="#595959"/>
+                <Setter Property="Foreground" Value="AntiqueWhite"/>
+            </Style>
+            <Style TargetType="{x:Type MenuItem}">
+                <Setter Property="Background" Value="#595959"/>
+                <Setter Property="Foreground" Value="AntiqueWhite"/>
+            </Style>
+            <!-- Completion Window Style -->
+            <Style x:Name="CompletionListBoxStyle" x:Key="{x:Type ae:CompletionListBox}" TargetType="{x:Type ae:CompletionListBox}">
+                <Setter Property="SnapsToDevicePixels" Value="True"/>
+                <Setter Property="Foreground">
+                    <Setter.Value>
+                        <SolidColorBrush Color="LightSlateGray"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <SolidColorBrush Color="#1E1E1E"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <!-- WPF 4.0 Workaround -->
+            <Style TargetType="{x:Type Rectangle}"/>
+            <!-- End WPF 4.0 Workaround -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.xaml" />
+                <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Dark.xaml"/>
+                <ResourceDictionary Source="Styles/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

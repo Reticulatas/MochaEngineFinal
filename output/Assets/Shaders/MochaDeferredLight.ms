@@ -1,0 +1,2 @@
+MochaDeferredLight_VS.hlsl
+MochaDeferredLight_PS.hlsl

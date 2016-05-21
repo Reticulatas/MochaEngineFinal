@@ -1,0 +1,18 @@
+{a23f1669-629f-4532-ac0e-d241231ef31a} event:/BG/Combat1
+{7d59d418-1d13-4dbb-ab05-65c7c8b89b09} event:/BG/Combat2
+{fcacfd88-6f57-49d9-84e6-5af384e015f0} event:/BG/NonCombat
+{47922a47-a883-4d88-afdf-1f1f036a0adb} event:/Enemy/Turret/Turret_LaserShot
+{963ce100-b253-4019-9aa6-45f62c4ab1fc} event:/Enemy/Turret/Turret_Rotate
+{a1ab7d65-e36d-47bf-95b1-75b37990206e} event:/Enemy/Turret/Turret_Targetting
+{80ebde93-f709-41d0-88d6-4331d4c90bef} event:/Player/Footstep
+{9df4e7a9-cee9-4548-9151-5638ae0700ea} event:/SFX/Door Move
+{a1693c6a-e071-459a-b294-27832b6e7c5b} event:/SFX/Elevator Start
+{6f0e39e9-d6c7-468a-b371-53caf15aab9f} event:/SFX/Elevator Stop
+{5f1d0658-62c9-40f7-b6e9-9ccfe7378ccd} event:/SFX/Hum
+{be531fa0-235a-4824-8663-e28c0dcebe62} bus:/
+{93f83735-fcff-4297-b33d-1267994fae5a} bus:/Reverb
+{44e5cf1a-1c2b-4a8f-8d5b-0cafd51a695d} bank:/Enemy
+{e297a3ad-aec7-4ed8-91ae-edd9dd31ddfb} bank:/Player
+{38306426-2ebc-4f67-8c93-3da427388a61} bank:/SFX
+{0cc83cb0-7741-47fe-a3a2-c92a36474031} bank:/Music
+{06b45ad1-de78-4bd7-8cc2-acd396abd63a} bank:/Master Bank

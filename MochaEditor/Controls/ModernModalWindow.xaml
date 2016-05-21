@@ -1,0 +1,10 @@
+﻿<mui:ModernDialog x:Class="MochaEditor.Controls.ModernModalWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ModernModalWindow" Height="100" Width="300">
+    <DockPanel>
+        <TextBlock DockPanel.Dock="Top" Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type mui:ModernDialog}}, Path=Message}"/>
+        <mui:ModernProgressRing IsActive="True"/>
+    </DockPanel>
+</mui:ModernDialog>

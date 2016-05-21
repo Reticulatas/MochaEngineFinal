@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="10">
+<g class_id="0" tracking_level="1" version="8" object_id="_0">
+	<mName>StickyCamInWorldLens</mName>
+	<transform class_id="1" tracking_level="1" version="3" object_id="_1">
+		<Component class_id="2" tracking_level="0" version="3">
+			<IRegisterable class_id="3" tracking_level="0" version="1">
+				<as_ref_count>1</as_ref_count>
+			</IRegisterable>
+			<enabled>1</enabled>
+			<gameObject class_id_reference="0" object_id_reference="_0"></gameObject>
+			<myType>CTransform</myType>
+		</Component>
+		<position class_id="4" tracking_level="0" version="0">
+			<t.x>0</t.x>
+			<t.y>0</t.y>
+			<t.z>0</t.z>
+		</position>
+		<scale>
+			<t.x>1</t.x>
+			<t.y>1</t.y>
+			<t.z>1</t.z>
+		</scale>
+		<rotation class_id="5" tracking_level="0" version="0">
+			<t.Angles>
+				<t.x>-0</t.x>
+				<t.y>0</t.y>
+				<t.z>-0</t.z>
+			</t.Angles>
+		</rotation>
+		<mDirection>
+			<t.x>0</t.x>
+			<t.y>0</t.y>
+			<t.z>0</t.z>
+		</mDirection>
+		<mScale class_id="6" tracking_level="0" version="0">
+			<t.array>
+				<count>16</count>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+			</t.array>
+		</mScale>
+		<mRotation>
+			<t.array>
+				<count>16</count>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>-0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>-0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+			</t.array>
+		</mRotation>
+		<mWorld>
+			<t.array>
+				<count>16</count>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+			</t.array>
+		</mWorld>
+		<children class_id="7" tracking_level="0" version="0">
+			<count>2</count>
+			<item_version>0</item_version>
+			<item class_id_reference="1" object_id="_2">
+				<Component>
+					<IRegisterable>
+						<as_ref_count>1</as_ref_count>
+					</IRegisterable>
+					<enabled>1</enabled>
+					<gameObject class_id_reference="0" object_id="_3">
+						<mName>CamLight</mName>
+						<transform class_id_reference="1" object_id_reference="_2"></transform>
+						<mComponents class_id="8" tracking_level="0" version="0">
+							<count>2</count>
+							<item_version>0</item_version>
+							<item class_id_reference="1" object_id_reference="_2"></item>
+							<item class_id="9" class_name="CLight" tracking_level="1" version="3" object_id="_4">
+								<Component>
+									<IRegisterable>
+										<as_ref_count>1</as_ref_count>
+									</IRegisterable>
+									<enabled>1</enabled>
+									<gameObject class_id_reference="0" object_id_reference="_3"></gameObject>
+									<myType>CLight</myType>
+								</Component>
+								<mDiffuse class_id="10" tracking_level="0" version="1">
+									<r>1</r>
+									<g>1</g>
+									<b>1</b>
+									<a>1</a>
+								</mDiffuse>
+								<mRange>30</mRange>
+								<mSpot>1</mSpot>
+								<mAtt>1.8</mAtt>
+								<mLightType>2</mLightType>
+								<mLightProperties class_id="11" tracking_level="0" version="1">
+									<mDiffuse class_id="12" tracking_level="0" version="0">
+										<t.x>0</t.x>
+										<t.y>0</t.y>
+										<t.z>0</t.z>
+										<t.w>0</t.w>
+									</mDiffuse>
+									<mRange>0</mRange>
+									<mDirection>
+										<t.x>0</t.x>
+										<t.y>0</t.y>
+										<t.z>0</t.z>
+									</mDirection>
+									<mSpot>0</mSpot>
+									<mAtt>0</mAtt>
+									<mLightType>0</mLightType>
+								</mLightProperties>
+								<mInnerAngle>15</mInnerAngle>
+								<mOuterAngle>20</mOuterAngle>
+								<mLightDir>
+									<t.x>0</t.x>
+									<t.y>-1</t.y>
+									<t.z>0</t.z>
+								</mLightDir>
+								<mIntensity>1</mIntensity>
+							</item>
+						</mComponents>
+						<mComponentLookupTable class_id="13" tracking_level="0" version="0">
+							<count>2</count>
+							<item_version>0</item_version>
+							<item class_id="14" tracking_level="0" version="0">
+								<first>CLight</first>
+								<second class_id_reference="9" object_id_reference="_4"></second>
+							</item>
+							<item>
+								<first>CTransform</first>
+								<second class_id_reference="1" object_id_reference="_2"></second>
+							</item>
+						</mComponentLookupTable>
+						<mParent class_id="-1"></mParent>
+						<isManaged>1</isManaged>
+						<flags class_id="15" tracking_level="0" version="0">
+							<count>0</count>
+							<item_version>0</item_version>
+						</flags>
+						<children class_id="16" tracking_level="0" version="0">
+							<count>0</count>
+							<item_version>0</item_version>
+						</children>
+						<mLayerMask class_id="17" tracking_level="0" version="1">
+							<mCurrentLayers>1</mCurrentLayers>
+						</mLayerMask>
+						<mGUID>d2e5372e-bba5-4edc-b902-eefd51315629</mGUID>
+					</gameObject>
+					<myType>CTransform</myType>
+				</Component>
+				<position>
+					<t.x>0</t.x>
+					<t.y>0</t.y>
+					<t.z>0</t.z>
+				</position>
+				<scale>
+					<t.x>1</t.x>
+					<t.y>1</t.y>
+					<t.z>1</t.z>
+				</scale>
+				<rotation>
+					<t.Angles>
+						<t.x>-90</t.x>
+						<t.y>0</t.y>
+						<t.z>0</t.z>
+					</t.Angles>
+				</rotation>
+				<mDirection>
+					<t.x>0</t.x>
+					<t.y>0</t.y>
+					<t.z>0</t.z>
+				</mDirection>
+				<mScale>
+					<t.array>
+						<count>16</count>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+					</t.array>
+				</mScale>
+				<mRotation>
+					<t.array>
+						<count>16</count>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+					</t.array>
+				</mRotation>
+				<mWorld>
+					<t.array>
+						<count>16</count>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>-4.3711388e-008</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>-1</item>
+						<item>-4.3711388e-008</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+					</t.array>
+				</mWorld>
+				<children>
+					<count>0</count>
+					<item_version>0</item_version>
+				</children>
+				<mParent class_id_reference="1" object_id_reference="_1"></mParent>
+			</item>
+			<item class_id_reference="1" object_id="_5">
+				<Component>
+					<IRegisterable>
+						<as_ref_count>1</as_ref_count>
+					</IRegisterable>
+					<enabled>1</enabled>
+					<gameObject class_id_reference="0" object_id="_6">
+						<mName>CamPointLight</mName>
+						<transform class_id_reference="1" object_id_reference="_5"></transform>
+						<mComponents>
+							<count>2</count>
+							<item_version>0</item_version>
+							<item class_id_reference="1" object_id_reference="_5"></item>
+							<item class_id_reference="9" object_id="_7">
+								<Component>
+									<IRegisterable>
+										<as_ref_count>1</as_ref_count>
+									</IRegisterable>
+									<enabled>1</enabled>
+									<gameObject class_id_reference="0" object_id_reference="_6"></gameObject>
+									<myType>CLight</myType>
+								</Component>
+								<mDiffuse>
+									<r>1</r>
+									<g>1</g>
+									<b>1</b>
+									<a>1</a>
+								</mDiffuse>
+								<mRange>0.85000002</mRange>
+								<mSpot>1</mSpot>
+								<mAtt>1</mAtt>
+								<mLightType>1</mLightType>
+								<mLightProperties>
+									<mDiffuse>
+										<t.x>0</t.x>
+										<t.y>0</t.y>
+										<t.z>0</t.z>
+										<t.w>0</t.w>
+									</mDiffuse>
+									<mRange>0</mRange>
+									<mDirection>
+										<t.x>0</t.x>
+										<t.y>0</t.y>
+										<t.z>0</t.z>
+									</mDirection>
+									<mSpot>0</mSpot>
+									<mAtt>0</mAtt>
+									<mLightType>0</mLightType>
+								</mLightProperties>
+								<mInnerAngle>30</mInnerAngle>
+								<mOuterAngle>45</mOuterAngle>
+								<mLightDir>
+									<t.x>0</t.x>
+									<t.y>-1</t.y>
+									<t.z>0</t.z>
+								</mLightDir>
+								<mIntensity>1</mIntensity>
+							</item>
+						</mComponents>
+						<mComponentLookupTable>
+							<count>2</count>
+							<item_version>0</item_version>
+							<item>
+								<first>CLight</first>
+								<second class_id_reference="9" object_id_reference="_7"></second>
+							</item>
+							<item>
+								<first>CTransform</first>
+								<second class_id_reference="1" object_id_reference="_5"></second>
+							</item>
+						</mComponentLookupTable>
+						<mParent class_id="-1"></mParent>
+						<isManaged>1</isManaged>
+						<flags>
+							<count>0</count>
+							<item_version>0</item_version>
+						</flags>
+						<children>
+							<count>0</count>
+							<item_version>0</item_version>
+						</children>
+						<mLayerMask>
+							<mCurrentLayers>1</mCurrentLayers>
+						</mLayerMask>
+						<mGUID>a1411f64-9b92-4b47-8fb1-d0a2fe7c2030</mGUID>
+					</gameObject>
+					<myType>CTransform</myType>
+				</Component>
+				<position>
+					<t.x>0</t.x>
+					<t.y>-0.0099999998</t.y>
+					<t.z>0.25</t.z>
+				</position>
+				<scale>
+					<t.x>1</t.x>
+					<t.y>1</t.y>
+					<t.z>1</t.z>
+				</scale>
+				<rotation>
+					<t.Angles>
+						<t.x>0</t.x>
+						<t.y>0</t.y>
+						<t.z>0</t.z>
+					</t.Angles>
+				</rotation>
+				<mDirection>
+					<t.x>0</t.x>
+					<t.y>0</t.y>
+					<t.z>0</t.z>
+				</mDirection>
+				<mScale>
+					<t.array>
+						<count>16</count>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+					</t.array>
+				</mScale>
+				<mRotation>
+					<t.array>
+						<count>16</count>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+					</t.array>
+				</mRotation>
+				<mWorld>
+					<t.array>
+						<count>16</count>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>-0.0099999998</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0.25</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+					</t.array>
+				</mWorld>
+				<children>
+					<count>0</count>
+					<item_version>0</item_version>
+				</children>
+				<mParent class_id_reference="1" object_id_reference="_1"></mParent>
+			</item>
+		</children>
+		<mParent class_id="-1"></mParent>
+	</transform>
+	<mComponents>
+		<count>6</count>
+		<item_version>0</item_version>
+		<item class_id_reference="1" object_id_reference="_1"></item>
+		<item class_id="18" class_name="CMeshRenderer" tracking_level="1" version="2" object_id="_8">
+			<CRenderer class_id="19" tracking_level="0" version="6">
+				<Component>
+					<IRegisterable>
+						<as_ref_count>1</as_ref_count>
+					</IRegisterable>
+					<enabled>1</enabled>
+					<gameObject class_id_reference="0" object_id_reference="_0"></gameObject>
+					<myType>CMeshRenderer</myType>
+				</Component>
+				<mMesh class_id="20" tracking_level="0" version="1">
+					<mAssetName>Sticky_Camera.bean</mAssetName>
+				</mMesh>
+				<mMaterial class_id="21" tracking_level="1" version="2" object_id="_9">
+					<Asset class_id="22" tracking_level="0" version="1">
+						<mName>[fee]</mName>
+						<mType></mType>
+						<mUseCounter>0</mUseCounter>
+						<mAutoUnload>1</mAutoUnload>
+					</Asset>
+					<mMaterialData class_id="23" tracking_level="1" version="1" object_id="_10">
+						<mAttributeMetaLookup class_id="24" tracking_level="0" version="0">
+							<count>3</count>
+							<item_version>0</item_version>
+							<item class_id="25" tracking_level="0" version="0">
+								<first>1</first>
+								<second class_id="26" tracking_level="0" version="0">
+									<count>1</count>
+									<item_version>0</item_version>
+									<item class_id="27" class_name="ColorNode" tracking_level="1" version="2" object_id="_11">
+										<MatAttribNode class_id="28" tracking_level="0" version="1">
+											<mNodeType>1</mNodeType>
+										</MatAttribNode>
+										<color>
+											<r>0.627451</r>
+											<g>1</g>
+											<b>0.66666669</b>
+											<a>1</a>
+										</color>
+										<mTextureScale class_id="29" tracking_level="0" version="0">
+											<t.x>1</t.x>
+											<t.y>1</t.y>
+										</mTextureScale>
+										<mTextureOffset>
+											<t.x>0</t.x>
+											<t.y>0</t.y>
+										</mTextureOffset>
+									</item>
+								</second>
+							</item>
+							<item>
+								<first>2</first>
+								<second>
+									<count>5</count>
+									<item_version>0</item_version>
+									<item class_id="30" class_name="TextureNode" tracking_level="1" version="1" object_id="_12">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>Sticky_Camera_D.png</mAssetName>
+										</mTexture>
+										<mTextureRegister>0</mTextureRegister>
+									</item>
+									<item class_id_reference="30" object_id="_13">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>Sticky_Camera_N.png</mAssetName>
+										</mTexture>
+										<mTextureRegister>1</mTextureRegister>
+									</item>
+									<item class_id_reference="30" object_id="_14">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>Sticky_Camera_D.png</mAssetName>
+										</mTexture>
+										<mTextureRegister>2</mTextureRegister>
+									</item>
+									<item class_id_reference="30" object_id="_15">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>Sticky_Camera_roughness.png</mAssetName>
+										</mTexture>
+										<mTextureRegister>3</mTextureRegister>
+									</item>
+									<item class_id_reference="30" object_id="_16">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>Sticky_Camera_M.png</mAssetName>
+										</mTexture>
+										<mTextureRegister>4</mTextureRegister>
+									</item>
+								</second>
+							</item>
+							<item>
+								<first>4</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item class_id="31" class_name="ShaderNode" tracking_level="1" version="2" object_id="_17">
+										<MatAttribNode>
+											<mNodeType>4</mNodeType>
+										</MatAttribNode>
+										<mShaderName class_id="32" tracking_level="0" version="2">
+											<str></str>
+											<length>0</length>
+											<capacity>0</capacity>
+										</mShaderName>
+										<mShaderFileName>MochaDeferredGeometry.ms</mShaderFileName>
+									</item>
+								</second>
+							</item>
+						</mAttributeMetaLookup>
+					</mMaterialData>
+				</mMaterial>
+				<blendState>0</blendState>
+				<mBumpFactor>0.80000001</mBumpFactor>
+				<mMetallicFactor>1</mMetallicFactor>
+				<mRoughnessFactor>1</mRoughnessFactor>
+				<mBlendState>5</mBlendState>
+				<mEmissiveColor>
+					<r>0</r>
+					<g>0</g>
+					<b>0</b>
+					<a>1</a>
+				</mEmissiveColor>
+				<mPerspective>1</mPerspective>
+			</CRenderer>
+		</item>
+		<item class_id="33" class_name="CMeshColliderComponent" tracking_level="1" version="2" object_id="_18">
+			<ColliderComponent class_id="34" tracking_level="0" version="3">
+				<Component>
+					<IRegisterable>
+						<as_ref_count>1</as_ref_count>
+					</IRegisterable>
+					<enabled>1</enabled>
+					<gameObject class_id_reference="0" object_id_reference="_0"></gameObject>
+					<myType>CMeshColliderComponent</myType>
+				</Component>
+				<mMass>-1</mMass>
+				<mRestitution>0</mRestitution>
+				<mFriction>1</mFriction>
+				<mMaterial class_id="35" tracking_level="0" version="1">
+					<mDensity>1</mDensity>
+					<mRestitution>0</mRestitution>
+					<mFriction>1</mFriction>
+				</mMaterial>
+			</ColliderComponent>
+			<m_file></m_file>
+			<mHasMesh>0</mHasMesh>
+			<mHasHull>0</mHasHull>
+		</item>
+		<item class_id="36" class_name="CPhysics" tracking_level="1" version="14" object_id="_19">
+			<Component>
+				<IRegisterable>
+					<as_ref_count>1</as_ref_count>
+				</IRegisterable>
+				<enabled>1</enabled>
+				<gameObject class_id_reference="0" object_id_reference="_0"></gameObject>
+				<myType>CPhysics</myType>
+			</Component>
+			<mInertia>0</mInertia>
+			<mMass>5</mMass>
+			<mFriction>0</mFriction>
+			<mDampingX>0.89999998</mDampingX>
+			<mDampingY>0.99000001</mDampingY>
+			<mRotation>0</mRotation>
+			<mRestitution>0</mRestitution>
+			<mAngVelocity>0</mAngVelocity>
+			<mPosition>
+				<t.x>0</t.x>
+				<t.y>0</t.y>
+				<t.z>0</t.z>
+				<t.w>0</t.w>
+			</mPosition>
+			<mPrevPosition>
+				<t.x>0</t.x>
+				<t.y>0</t.y>
+				<t.z>0</t.z>
+				<t.w>0</t.w>
+			</mPrevPosition>
+			<mVelocity>
+				<t.x>0</t.x>
+				<t.y>0</t.y>
+				<t.z>0</t.z>
+				<t.w>0</t.w>
+			</mVelocity>
+			<mAcceleration>
+				<t.x>0</t.x>
+				<t.y>0</t.y>
+				<t.z>0</t.z>
+				<t.w>0</t.w>
+			</mAcceleration>
+			<mAccumulatedForce>
+				<t.x>0</t.x>
+				<t.y>0</t.y>
+				<t.z>0</t.z>
+				<t.w>0</t.w>
+			</mAccumulatedForce>
+			<mAngAccel>
+				<t.x>0</t.x>
+				<t.y>0</t.y>
+				<t.z>0</t.z>
+				<t.w>0</t.w>
+			</mAngAccel>
+			<mAngPos>
+				<t.x>0</t.x>
+				<t.y>0</t.y>
+				<t.z>0</t.z>
+				<t.w>0</t.w>
+			</mAngPos>
+			<mMotion>1</mMotion>
+			<mI_Mass>0</mI_Mass>
+			<mInveInertia>0</mInveInertia>
+			<mPreRotation>0</mPreRotation>
+			<mIsCollision>0</mIsCollision>
+			<mIsForceActive>0</mIsForceActive>
+			<mIsActive>1</mIsActive>
+			<mIsControl>0</mIsControl>
+			<mIsSleep>0</mIsSleep>
+			<mCollisionData class_id="-1"></mCollisionData>
+			<mDampingRot>0.99000001</mDampingRot>
+			<mIsTriggered>0</mIsTriggered>
+			<mWidthScale>1</mWidthScale>
+			<mHeightScale>1</mHeightScale>
+			<mCollisionShapeInt>1</mCollisionShapeInt>
+			<mIsJoint>0</mIsJoint>
+			<mOffsetCenterX>0</mOffsetCenterX>
+			<mOffsetCenterY>0</mOffsetCenterY>
+			<mIsGravityOn>0</mIsGravityOn>
+			<mIsMovingStatic>0</mIsMovingStatic>
+			<mCollisionID>0</mCollisionID>
+			<mIsRotation>0</mIsRotation>
+			<mColliderType>0</mColliderType>
+			<mGravityFactor>3.6347677e-031</mGravityFactor>
+			<temp_gravity_vector>
+				<t.x>0</t.x>
+				<t.y>0</t.y>
+				<t.z>0</t.z>
+			</temp_gravity_vector>
+			<mLockOnX>0</mLockOnX>
+			<mLockOnY>0</mLockOnY>
+			<mLockOnZ>0</mLockOnZ>
+		</item>
+		<item class_id="37" class_name="CScript" tracking_level="1" version="2" object_id="_20">
+			<Component>
+				<IRegisterable>
+					<as_ref_count>1</as_ref_count>
+				</IRegisterable>
+				<enabled>1</enabled>
+				<gameObject class_id_reference="0" object_id_reference="_0"></gameObject>
+				<myType>CScript</myType>
+			</Component>
+			<register_id>a520f3df-65f5-4938-b416-408f139aaa07</register_id>
+			<scriptAsset>
+				<mAssetName>CameraRotationLimit.cs</mAssetName>
+			</scriptAsset>
+			<prevScriptAsset>
+				<mAssetName>CameraRotationLimit.cs</mAssetName>
+			</prevScriptAsset>
+			<register_id>a520f3df-65f5-4938-b416-408f139aaa07</register_id>
+			<invalid>0</invalid>
+		</item>
+		<item class_id_reference="37" object_id="_21">
+			<Component>
+				<IRegisterable>
+					<as_ref_count>1</as_ref_count>
+				</IRegisterable>
+				<enabled>1</enabled>
+				<gameObject class_id_reference="0" object_id_reference="_0"></gameObject>
+				<myType>CScript</myType>
+			</Component>
+			<register_id>e9c7bf01-f7a1-406b-b992-6028a2f0fe67</register_id>
+			<scriptAsset>
+				<mAssetName>StickyCameraController.cs</mAssetName>
+			</scriptAsset>
+			<prevScriptAsset>
+				<mAssetName>StickyCameraController.cs</mAssetName>
+			</prevScriptAsset>
+			<register_id>e9c7bf01-f7a1-406b-b992-6028a2f0fe67</register_id>
+			<invalid>0</invalid>
+		</item>
+	</mComponents>
+	<mComponentLookupTable>
+		<count>4</count>
+		<item_version>0</item_version>
+		<item>
+			<first>CMeshColliderComponent</first>
+			<second class_id_reference="33" object_id_reference="_18"></second>
+		</item>
+		<item>
+			<first>CMeshRenderer</first>
+			<second class_id_reference="18" object_id_reference="_8"></second>
+		</item>
+		<item>
+			<first>CPhysics</first>
+			<second class_id_reference="36" object_id_reference="_19"></second>
+		</item>
+		<item>
+			<first>CTransform</first>
+			<second class_id_reference="1" object_id_reference="_1"></second>
+		</item>
+	</mComponentLookupTable>
+	<mParent class_id="-1"></mParent>
+	<isManaged>1</isManaged>
+	<flags>
+		<count>0</count>
+		<item_version>0</item_version>
+	</flags>
+	<children>
+		<count>0</count>
+		<item_version>0</item_version>
+	</children>
+	<mLayerMask>
+		<mCurrentLayers>1</mCurrentLayers>
+	</mLayerMask>
+	<mGUID>91053ad4-9032-49b0-bed7-59213f64fa31</mGUID>
+</g>

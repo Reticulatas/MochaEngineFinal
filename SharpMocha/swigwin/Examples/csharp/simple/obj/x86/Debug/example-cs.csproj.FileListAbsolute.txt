@@ -1,0 +1,5 @@
+C:\Users\Nicholas\Desktop\swigwin-3.0.2\Examples\csharp\simple\bin\x86\Debug\runme.exe
+C:\Users\Nicholas\Desktop\swigwin-3.0.2\Examples\csharp\simple\bin\x86\Debug\runme.pdb
+C:\Users\Nicholas\Desktop\swigwin-3.0.2\Examples\csharp\simple\obj\x86\Debug\example-cs.csprojResolveAssemblyReference.cache
+C:\Users\Nicholas\Desktop\swigwin-3.0.2\Examples\csharp\simple\obj\x86\Debug\runme.exe
+C:\Users\Nicholas\Desktop\swigwin-3.0.2\Examples\csharp\simple\obj\x86\Debug\runme.pdb

@@ -1,0 +1,25 @@
+﻿<mui:ModernWindow xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mocha="clr-namespace:MochaEditor"
+        xmlns:input="clr-namespace:System.Windows.Input;assembly=System"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        mc:Ignorable="d" x:Class="MochaEditor.MainWindow" Name="MainWindowInst"
+        Title="Mocha Studio" Closed="Window_Closed" Loaded="Window_Loaded" Initialized="Window_Initialized" PreviewKeyDown="ModernWindow_KeyDown_1"
+        Icon="Icon.ico"  WindowState="Maximized">
+
+    <!-- COMMAND BINDINGS IN MAIN WINDOWS -->
+
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="Mocha Studio" x:Name="MochaLinkGroup">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="World" Source="/Workspace_World.xaml"/>
+                <!--<mui:Link DisplayName="Game" Source="/EngineControl.xaml"/>-->
+                <mui:Link DisplayName="Performance" Source="/Workspace_Performance.xaml"/>
+                <mui:Link DisplayName="Code" Source="/Workspace_Code.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+
+</mui:ModernWindow>

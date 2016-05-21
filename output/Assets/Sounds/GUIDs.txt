@@ -1,0 +1,67 @@
+{39a1f38f-abd9-43d5-a9b6-6ff4b7ceb200} event:/Active Ambience (adaptive)/AMB_HALLWAY
+{70686217-16b4-43c0-b869-1b2ecc78d9cb} event:/Active Ambience (adaptive)/AMB_MAZE
+{bc51c64f-37be-4f48-a722-bc6fcf6d2d50} event:/Passive Ambience (scattered)/AMB_CAVES
+{cb44fcd2-9b5f-483d-b14a-291a32857e1e} event:/Passive Ambience (scattered)/AMB_HUB
+{b293ce11-f51e-4afc-9afe-2f318cffef44} event:/Passive Ambience (scattered)/AMB_SCIENCE
+{d0534649-21b5-4fce-a752-ae4fa40e6d3f} event:/C1 (creature one)/C1_ANGRY
+{2747cb90-fac0-4e68-b580-664f3e021eea} event:/C1 (creature one)/C1_CHATTER
+{a0e57324-8eaa-464d-946c-5ec7ce92d4d5} event:/C1 (creature one)/C1_CLOSE_LOOP
+{e40526f6-8f6e-4ace-b867-16bfffd094ae} event:/C1 (creature one)/C1_LAUGH
+{e1bda52f-f17c-4a97-91ca-53cbd597fe90} event:/C1 (creature one)/C1_PAIN
+{7b6985aa-966a-408f-b935-1a660f01a74e} event:/C2 (creature two)/C2_CLOSE_LOOP
+{f88a23ba-bc82-4c53-9a7b-756535bcdceb} event:/P1 (stealth player)/P1_FOOTSTEPS
+{d1f83afc-0f3b-434a-99dd-5ec872d0a89d} event:/P1 (stealth player)/Camera Object/P1_CAM_RETR_A
+{2b63992c-3f4f-4d3a-b64d-2fa3da947494} event:/P1 (stealth player)/Camera Object/P1_CAM_RETR_B
+{67259a97-5074-4e6d-9551-8b6a3917d85f} event:/P1 (stealth player)/Camera Object/P1_CAM_TOSS
+{ba98c2ca-bf11-4e9d-b570-986faaaaa004} event:/P1 (stealth player)/Camera Object/P1_CAM_TOSS_IMP
+{6767b780-72f2-456a-a6c2-a0e8437115fa} event:/P2 (control room)/Control Console/P2_MON_TEXT
+{d50536eb-fbc5-48c3-a1b1-28f74cc4fe27} event:/P2 (control room)/Monitors/P2_TV_CHANNEL
+{f2bea609-b9d8-42ae-9f87-4400a69b5bbe} event:/World/(uncategorized)/GEN_ALARM
+{5ad2b861-67c5-4c24-9339-d1156d871386} event:/World/(uncategorized)/TREE_RUSTLE
+{63afd09c-0f1a-4106-b32a-286de4e80ac8} event:/World/Buttons/BUTTON_GREEN
+{86ffd868-e92b-4bf5-92d6-c774c4ca755b} event:/World/Buttons/BUTTON_RED
+{857af51c-5093-4718-add2-7c37be57d01f} event:/World/Buttons/BUTTON_YELLOW
+{e32b746f-bb2d-44ca-b85c-c68ea0e96cb5} event:/World/Camera Object/CAM_FLIGHT
+{5c288997-0dc6-4c19-87d4-e4028059660a} event:/World/Camera Object/CAM_RETR
+{10385238-c542-4bcd-820c-a94b66d475e3} event:/World/Camera Object/CAM_TOSS_IMP
+{857587d7-b47a-4976-8be5-9877fa2e167b} event:/World/Doors/Caves/Vertical/CAV_V_DOOR_CLOSE
+{f33972e8-bef0-4882-978f-40eb44b2662c} event:/World/Doors/Caves/Vertical/CAV_V_DOOR_OPEN
+{0ea27093-2b62-4511-b219-a737c4e3f1e7} event:/World/Doors/Science/Horizontal/SCI_H_DOOR_CLOSE
+{5f4576be-73b4-4105-b298-456e415f9696} event:/World/Doors/Science/Horizontal/SCI_H_DOOR_OPEN
+{301a454f-01f1-427e-b14f-6f0e4c3f8d43} event:/World/Doors/Science/Vertical/SCI_V_DOOR_CLOSE
+{8db7e690-b74d-4fd6-acaa-e6f23f128aec} event:/World/Doors/Science/Vertical/SCI_V_DOOR_OPEN
+{fbbd7f92-4809-4fc3-b41e-a49398f28d88} event:/World/Glass/GLASS_CRACK
+{7c1aacdb-31eb-428c-a25a-d3efc5c47eef} event:/World/Lights (unfinished)/F_LIGHT/F_LIGHT_FIZZLE
+{26dc3bfb-d797-4ed1-8909-162437564ed4} event:/World/Lights (unfinished)/F_LIGHT/F_LIGHT_LOOP
+{97b204cb-78a4-4a40-9201-3b63e6f7085b} event:/World/Lights (unfinished)/F_LIGHT/F_LIGHT_SWITCH_OFF
+{30c142f3-da1e-4f0f-b78e-e9945a19ec87} event:/World/Lights (unfinished)/F_LIGHT/F_LIGHT_SWITCH_ON
+{76e9deb2-849c-4f5c-92e0-c0d8289e3607} event:/World/Loud Speaker (unfinished)/SPEAKER_CONFIRM
+{a84b7d83-ad21-43a5-8685-c9101db32213} event:/World/Loud Speaker (unfinished)/SPEAKER_DENY
+{9a8e7863-78b4-4026-873e-eeef68809a48} event:/World/Mounted Camera/CAM_LIGHT
+{36828158-0236-4f00-b52c-3fa53b94764c} event:/World/Mounted Camera/CAM_ROTATE
+{be82e860-37a3-4871-bcaf-583f853060db} event:/World/Pinpad/PINPAD_CONFIRM
+{4098480f-bdb6-467d-a586-5961f951656f} event:/World/Pinpad/PINPAD_DENY
+{2514773c-0d96-4caf-8c07-26e3cb70ec2a} event:/World/Pinpad/PINPAD_INPUT
+{0859232b-e836-45a3-a8b9-4558eaad486d} event:/World/RC  Car/RC_CAR_MOVE
+{d2479d4d-550f-42fa-8cf5-a2178fb118e9} event:/Music/MUSIC_CREDITS
+{db283920-4b19-48a9-87d0-b25531959977} event:/Music/MUSIC_ESCAPE
+{c6874596-1a09-47de-b819-9bbfc35b4693} event:/Music/MUSIC_HUB_LOOP
+{b3c39673-786d-41cd-adcc-64a1c158d322} event:/Music/MUSIC_INTRO_MENU
+{efebbf30-953b-4495-857c-9ad7d32bd0bf} event:/Music/STABS/LONG/RISE_A
+{e1212a6a-5839-447d-9e3b-b98c91df0d67} event:/Music/STABS/LONG/RISE_B
+{f3fb50b2-fca2-4a7e-adcc-12f89a1df0e0} event:/Music/STABS/LONG/RISE_C
+{bac4f8a3-32b7-4d61-8c1c-f369ced3d9c6} event:/Music/STABS/LONG/RISE_D
+{bbea685f-b9a4-4b0d-b9a3-7c6fd2619f5b} event:/Music/STABS/MEDIUM/PERCUSSIVE
+{7407e6bc-542a-4277-9bd6-a3ba6cfca59a} event:/Music/STABS/SHORT/CAUTIOUS
+{f96d1418-560c-4e5a-ac9b-4e6f9568c485} event:/Music/STABS/SHORT/HORN
+{51a7a3e1-6f50-4dc2-837d-b7e48469b986} event:/Music/STABS/SHORT/ORCHESTRAL
+{a224f3d1-78c8-4af9-ac44-092a4e9d6d98} event:/Music/STABS/SHORT/PERCUSSIVE_A
+{61e2721a-8740-487b-aacf-bbe30879f4d8} event:/Music/STABS/SHORT/PERCUSSIVE_B
+{c5abdc87-a62a-4d74-b2b4-5af1b60fb1da} event:/Music/STABS/SHORT/SQUEAK
+{efb003f0-2eb7-4832-8a74-bc9cefec4fd8} bus:/
+{63ed3ad7-34be-47ed-a350-67dbc3967301} bus:/Lowpass
+{50cb07cb-a1e3-4852-b753-a1d79d077dbc} bus:/Reverb
+{3de852e8-2845-4b50-98e2-3d26bfcd65df} bus:/P2_BUS
+{5932e8dc-7b90-4ed8-98f0-3832e3aa0206} bank:/MUSIC
+{99c4bf3a-d785-469b-8457-806251b14f78} bank:/AMBIENCE
+{c72e025c-3468-4b91-9d73-76ccc707977a} bank:/Master Bank

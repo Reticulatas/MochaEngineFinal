@@ -1,0 +1,74 @@
+#include "MochaShader.hlsl"
+
+M_TEXTURE2D normal		: register(t0);
+M_TEXTURE2D albedo		: register(t1);
+M_TEXTURE2D specular	: register(t2);
+M_TEXTURE2D depth		  : register(t3);
+M_TEXTURE3D EnvMap		: register(t4);
+
+// Pixel Shader
+float4 PS(VertexOutLightStage pin) : SV_Target
+{
+  // Unproject position to use as texCoords
+  float2 texCoords = pin.PosP.xy / pin.PosP.w;
+  texCoords.y *= -1;
+  texCoords = texCoords * .5f + .5f;  
+
+  // Get Position from depth
+  // Clamp the view space position to the plane at Z = 1
+  float3 viewRay = float3(pin.PosV.xy / pin.PosV.z, 1.0f);
+  float depthVal = depth.Sample(pointSampler, texCoords).r;
+  float linearDepth = gPlanes.y / (depthVal - gPlanes.x);
+  float3 posVS = viewRay * linearDepth;
+  float3 posWS = mul(float4(posVS, 1), gInvView).xyz;
+
+  float4 diffuse = float4(albedo.Sample(pointSampler, texCoords).rgb, 1);
+  // Move back range to [-1, 1]
+  float3 bumpNormal = normal.Sample(pointSampler, texCoords).xyz * 2.f - 1.f;
+  float4 spec = specular.Sample(pointSampler, texCoords);
+ 
+  float3 toEyeW = normalize(gEyePosW - posWS);
+
+  Material gMaterial;
+  gMaterial.Ambient = float4(0, 0, 0, 0);
+  gMaterial.Diffuse = float4(diffuse.rgb, 1);
+  gMaterial.Specular = spec;
+  
+  float4 texColor = float4(0, 0, 0, 0);
+
+  float roughness = specular.Sample(pointSampler, texCoords).a;
+  float metallic = normal.Sample(pointSampler, texCoords).a;
+
+<<<<<<< local
+  roughness = .9f;
+  metallic = .05f;
+=======
+  //roughness = .1f;
+  //metallic = .9f;
+>>>>>>> other
+
+  float mipIndex = roughness * roughness * 8.0f;
+ 
+  // Compute reflection
+  float3 reflectVector = reflect(-toEyeW, bumpNormal);
+  //float3 reflectVector = BPCEM(gEyePosW, bumpNormal, posWS, float3(-7.46f, 4.3f, 10.05f), 30, -30);
+
+  //float4 envColor = EnvMap.SampleLevel(clampAnisotropic, reflectVector, 0);
+  float4 envColor = EnvMap.SampleLevel(samAnisotropic, reflectVector, mipIndex);
+  
+  if (gLight.Type == DIRECTIONAL)
+   texColor += ComputeDirLightPBR(gMaterial, gLight, posWS, bumpNormal, toEyeW, envColor.rgb, roughness, metallic);
+  
+  // Point light
+  else if (gLight.Type == POINT)
+   texColor += ComputePointLightPBR(gMaterial, gLight, posWS, bumpNormal, toEyeW, envColor.rgb, roughness, metallic);
+  
+  // SpotLight
+  else if (gLight.Type == SPOTLIGHT)
+    texColor += ComputeSpotLight(gMaterial, gLight, posWS, bumpNormal, toEyeW);
+  
+  // float4 ambientColor = EnvMap.SampleLevel(samAnisotropic, reflectVector, 4);
+  texColor = float4(gIntensity * texColor.xyz, 1);
+
+   return texColor;
+}

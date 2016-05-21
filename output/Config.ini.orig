@@ -1,0 +1,12 @@
+<<<<<<< local
+Config::initialLevel	Assets/Levels/level1_2.mocha
+=======
+Config::initialLevel	Assets/Levels/test.mocha
+>>>>>>> other
+Config::showConsole	1
+Config::startFullscreen	0
+Config::loadPrefabsOnStart	1
+Config::width	1920
+Config::height	1080
+Config::subloadLevel	subloadscreen.mocha
+Config::allowBarristaDebugStats	0

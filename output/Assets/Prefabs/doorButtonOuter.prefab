@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="10">
+<g class_id="0" tracking_level="1" version="8" object_id="_0">
+	<mName>doorButtonOuter</mName>
+	<transform class_id="1" tracking_level="1" version="3" object_id="_1">
+		<Component class_id="2" tracking_level="0" version="3">
+			<IRegisterable class_id="3" tracking_level="0" version="1">
+				<as_ref_count>1</as_ref_count>
+			</IRegisterable>
+			<enabled>1</enabled>
+			<gameObject class_id_reference="0" object_id_reference="_0"></gameObject>
+			<myType>CTransform</myType>
+		</Component>
+		<position class_id="4" tracking_level="0" version="0">
+			<t.x>69.164185</t.x>
+			<t.y>1.7985156</t.y>
+			<t.z>28.987156</t.z>
+		</position>
+		<scale>
+			<t.x>0.20000002</t.x>
+			<t.y>0.2</t.y>
+			<t.z>0.14</t.z>
+		</scale>
+		<rotation class_id="5" tracking_level="0" version="0">
+			<t.Angles>
+				<t.x>0</t.x>
+				<t.y>180</t.y>
+				<t.z>0</t.z>
+			</t.Angles>
+		</rotation>
+		<mDirection>
+			<t.x>0</t.x>
+			<t.y>0</t.y>
+			<t.z>0</t.z>
+		</mDirection>
+		<mScale class_id="6" tracking_level="0" version="0">
+			<t.array>
+				<count>16</count>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+			</t.array>
+		</mScale>
+		<mRotation>
+			<t.array>
+				<count>16</count>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+			</t.array>
+		</mRotation>
+		<mWorld>
+			<t.array>
+				<count>16</count>
+				<item>-0.20000002</item>
+				<item>0</item>
+				<item>-1.2239188e-008</item>
+				<item>69.164185</item>
+				<item>0</item>
+				<item>0.2</item>
+				<item>0</item>
+				<item>1.7985156</item>
+				<item>1.7484556e-008</item>
+				<item>0</item>
+				<item>-0.14</item>
+				<item>28.987156</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+			</t.array>
+		</mWorld>
+		<children class_id="7" tracking_level="0" version="0">
+			<count>1</count>
+			<item_version>0</item_version>
+			<item class_id_reference="1" object_id="_2">
+				<Component>
+					<IRegisterable>
+						<as_ref_count>1</as_ref_count>
+					</IRegisterable>
+					<enabled>1</enabled>
+					<gameObject class_id_reference="0" object_id="_3">
+						<mName>doorButton</mName>
+						<transform class_id_reference="1" object_id_reference="_2"></transform>
+						<mComponents class_id="8" tracking_level="0" version="0">
+							<count>3</count>
+							<item_version>0</item_version>
+							<item class_id_reference="1" object_id_reference="_2"></item>
+							<item class_id="9" class_name="CMeshRenderer" tracking_level="1" version="2" object_id="_4">
+								<CRenderer class_id="10" tracking_level="0" version="5">
+									<Component>
+										<IRegisterable>
+											<as_ref_count>1</as_ref_count>
+										</IRegisterable>
+										<enabled>1</enabled>
+										<gameObject class_id_reference="0" object_id_reference="_3"></gameObject>
+										<myType>CMeshRenderer</myType>
+									</Component>
+									<mMesh class_id="11" tracking_level="0" version="1">
+										<mAssetName>CubeUnit_Btm.bean</mAssetName>
+									</mMesh>
+									<mMaterial class_id="12" tracking_level="1" version="2" object_id="_5">
+										<Asset class_id="13" tracking_level="0" version="1">
+											<mName>[fee]</mName>
+											<mType></mType>
+											<mUseCounter>0</mUseCounter>
+											<mAutoUnload>1</mAutoUnload>
+										</Asset>
+										<mMaterialData class_id="14" tracking_level="1" version="1" object_id="_6">
+											<mAttributeMetaLookup class_id="15" tracking_level="0" version="0">
+												<count>3</count>
+												<item_version>0</item_version>
+												<item class_id="16" tracking_level="0" version="0">
+													<first>1</first>
+													<second class_id="17" tracking_level="0" version="0">
+														<count>1</count>
+														<item_version>0</item_version>
+														<item class_id="18" class_name="ColorNode" tracking_level="1" version="2" object_id="_7">
+															<MatAttribNode class_id="19" tracking_level="0" version="1">
+																<mNodeType>1</mNodeType>
+															</MatAttribNode>
+															<color class_id="20" tracking_level="0" version="1">
+																<r>1</r>
+																<g>1</g>
+																<b>1</b>
+																<a>1</a>
+															</color>
+															<mTextureScale class_id="21" tracking_level="0" version="0">
+																<t.x>1</t.x>
+																<t.y>1</t.y>
+															</mTextureScale>
+															<mTextureOffset>
+																<t.x>0</t.x>
+																<t.y>0</t.y>
+															</mTextureOffset>
+														</item>
+													</second>
+												</item>
+												<item>
+													<first>2</first>
+													<second>
+														<count>5</count>
+														<item_version>0</item_version>
+														<item class_id="22" class_name="TextureNode" tracking_level="1" version="1" object_id="_8">
+															<MatAttribNode>
+																<mNodeType>2</mNodeType>
+															</MatAttribNode>
+															<mTexture>
+																<mAssetName>BlankWhite.png</mAssetName>
+															</mTexture>
+															<mTextureRegister>0</mTextureRegister>
+														</item>
+														<item class_id_reference="22" object_id="_9">
+															<MatAttribNode>
+																<mNodeType>2</mNodeType>
+															</MatAttribNode>
+															<mTexture>
+																<mAssetName>[fee]</mAssetName>
+															</mTexture>
+															<mTextureRegister>1</mTextureRegister>
+														</item>
+														<item class_id_reference="22" object_id="_10">
+															<MatAttribNode>
+																<mNodeType>2</mNodeType>
+															</MatAttribNode>
+															<mTexture>
+																<mAssetName>[fee]</mAssetName>
+															</mTexture>
+															<mTextureRegister>2</mTextureRegister>
+														</item>
+														<item class_id_reference="22" object_id="_11">
+															<MatAttribNode>
+																<mNodeType>2</mNodeType>
+															</MatAttribNode>
+															<mTexture>
+																<mAssetName>[fee]</mAssetName>
+															</mTexture>
+															<mTextureRegister>3</mTextureRegister>
+														</item>
+														<item class_id_reference="22" object_id="_12">
+															<MatAttribNode>
+																<mNodeType>2</mNodeType>
+															</MatAttribNode>
+															<mTexture>
+																<mAssetName>[fee]</mAssetName>
+															</mTexture>
+															<mTextureRegister>4</mTextureRegister>
+														</item>
+													</second>
+												</item>
+												<item>
+													<first>4</first>
+													<second>
+														<count>1</count>
+														<item_version>0</item_version>
+														<item class_id="23" class_name="ShaderNode" tracking_level="1" version="2" object_id="_13">
+															<MatAttribNode>
+																<mNodeType>4</mNodeType>
+															</MatAttribNode>
+															<mShaderName class_id="24" tracking_level="0" version="2">
+																<str></str>
+																<length>0</length>
+																<capacity>0</capacity>
+															</mShaderName>
+															<mShaderFileName>MochaDeferredGeometry.ms</mShaderFileName>
+														</item>
+													</second>
+												</item>
+											</mAttributeMetaLookup>
+										</mMaterialData>
+									</mMaterial>
+									<blendState>0</blendState>
+									<mBumpFactor>1</mBumpFactor>
+									<mMetallicFactor>1</mMetallicFactor>
+									<mRoughnessFactor>1</mRoughnessFactor>
+									<mBlendState>5</mBlendState>
+									<mEmissiveColor>
+										<r>0</r>
+										<g>0</g>
+										<b>0</b>
+										<a>1</a>
+									</mEmissiveColor>
+								</CRenderer>
+							</item>
+							<item class_id="25" class_name="CScript" tracking_level="1" version="2" object_id="_14">
+								<Component>
+									<IRegisterable>
+										<as_ref_count>1</as_ref_count>
+									</IRegisterable>
+									<enabled>1</enabled>
+									<gameObject class_id_reference="0" object_id_reference="_3"></gameObject>
+									<myType>CScript</myType>
+								</Component>
+								<register_id>1fa2a4aa-73f3-479b-8420-1006a434b51d</register_id>
+								<scriptAsset>
+									<mAssetName>DoorButton.cs</mAssetName>
+								</scriptAsset>
+								<prevScriptAsset>
+									<mAssetName>DoorButton.cs</mAssetName>
+								</prevScriptAsset>
+								<register_id>1fa2a4aa-73f3-479b-8420-1006a434b51d</register_id>
+								<invalid>0</invalid>
+							</item>
+						</mComponents>
+						<mComponentLookupTable class_id="26" tracking_level="0" version="0">
+							<count>2</count>
+							<item_version>0</item_version>
+							<item class_id="27" tracking_level="0" version="0">
+								<first>CMeshRenderer</first>
+								<second class_id_reference="9" object_id_reference="_4"></second>
+							</item>
+							<item>
+								<first>CTransform</first>
+								<second class_id_reference="1" object_id_reference="_2"></second>
+							</item>
+						</mComponentLookupTable>
+						<mParent class_id="-1"></mParent>
+						<isManaged>1</isManaged>
+						<flags class_id="28" tracking_level="0" version="0">
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>doorButton</item>
+						</flags>
+						<children class_id="29" tracking_level="0" version="0">
+							<count>0</count>
+							<item_version>0</item_version>
+						</children>
+						<mLayerMask class_id="30" tracking_level="0" version="1">
+							<mCurrentLayers>1</mCurrentLayers>
+						</mLayerMask>
+						<mGUID>77d3b2b4-712a-4a0a-b35f-2d965bcf2c62</mGUID>
+					</gameObject>
+					<myType>CTransform</myType>
+				</Component>
+				<position>
+					<t.x>-0.0023193359</t.x>
+					<t.y>0.19999979</t.y>
+					<t.z>-0.25000191</t.z>
+				</position>
+				<scale>
+					<t.x>0.60000002</t.x>
+					<t.y>0.60000002</t.y>
+					<t.z>1</t.z>
+				</scale>
+				<rotation>
+					<t.Angles>
+						<t.x>0</t.x>
+						<t.y>0</t.y>
+						<t.z>0</t.z>
+					</t.Angles>
+				</rotation>
+				<mDirection>
+					<t.x>0</t.x>
+					<t.y>0</t.y>
+					<t.z>0</t.z>
+				</mDirection>
+				<mScale>
+					<t.array>
+						<count>16</count>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+					</t.array>
+				</mScale>
+				<mRotation>
+					<t.array>
+						<count>16</count>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+					</t.array>
+				</mRotation>
+				<mWorld>
+					<t.array>
+						<count>16</count>
+						<item>0.60000002</item>
+						<item>0</item>
+						<item>0</item>
+						<item>-0.0023193359</item>
+						<item>0</item>
+						<item>0.60000002</item>
+						<item>0</item>
+						<item>0.19999979</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>-0.25000191</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+					</t.array>
+				</mWorld>
+				<children>
+					<count>0</count>
+					<item_version>0</item_version>
+				</children>
+				<mParent class_id_reference="1" object_id_reference="_1"></mParent>
+			</item>
+		</children>
+		<mParent class_id="-1"></mParent>
+	</transform>
+	<mComponents>
+		<count>2</count>
+		<item_version>0</item_version>
+		<item class_id_reference="1" object_id_reference="_1"></item>
+		<item class_id_reference="9" object_id="_15">
+			<CRenderer>
+				<Component>
+					<IRegisterable>
+						<as_ref_count>1</as_ref_count>
+					</IRegisterable>
+					<enabled>1</enabled>
+					<gameObject class_id_reference="0" object_id_reference="_0"></gameObject>
+					<myType>CMeshRenderer</myType>
+				</Component>
+				<mMesh>
+					<mAssetName>CubeUnit_Btm.bean</mAssetName>
+				</mMesh>
+				<mMaterial object_id="_16">
+					<Asset>
+						<mName>[fee]</mName>
+						<mType></mType>
+						<mUseCounter>0</mUseCounter>
+						<mAutoUnload>1</mAutoUnload>
+					</Asset>
+					<mMaterialData object_id="_17">
+						<mAttributeMetaLookup>
+							<count>3</count>
+							<item_version>0</item_version>
+							<item>
+								<first>1</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item class_id_reference="18" object_id="_18">
+										<MatAttribNode>
+											<mNodeType>1</mNodeType>
+										</MatAttribNode>
+										<color>
+											<r>0.31764707</r>
+											<g>0.31764707</g>
+											<b>0.31764707</b>
+											<a>1</a>
+										</color>
+										<mTextureScale>
+											<t.x>1</t.x>
+											<t.y>1</t.y>
+										</mTextureScale>
+										<mTextureOffset>
+											<t.x>0</t.x>
+											<t.y>0</t.y>
+										</mTextureOffset>
+									</item>
+								</second>
+							</item>
+							<item>
+								<first>2</first>
+								<second>
+									<count>5</count>
+									<item_version>0</item_version>
+									<item class_id_reference="22" object_id="_19">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>BlankWhite.png</mAssetName>
+										</mTexture>
+										<mTextureRegister>0</mTextureRegister>
+									</item>
+									<item class_id_reference="22" object_id="_20">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>[fee]</mAssetName>
+										</mTexture>
+										<mTextureRegister>1</mTextureRegister>
+									</item>
+									<item class_id_reference="22" object_id="_21">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>[fee]</mAssetName>
+										</mTexture>
+										<mTextureRegister>2</mTextureRegister>
+									</item>
+									<item class_id_reference="22" object_id="_22">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>[fee]</mAssetName>
+										</mTexture>
+										<mTextureRegister>3</mTextureRegister>
+									</item>
+									<item class_id_reference="22" object_id="_23">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>[fee]</mAssetName>
+										</mTexture>
+										<mTextureRegister>4</mTextureRegister>
+									</item>
+								</second>
+							</item>
+							<item>
+								<first>4</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item class_id_reference="23" object_id="_24">
+										<MatAttribNode>
+											<mNodeType>4</mNodeType>
+										</MatAttribNode>
+										<mShaderName>
+											<str></str>
+											<length>0</length>
+											<capacity>0</capacity>
+										</mShaderName>
+										<mShaderFileName>MochaDeferredGeometry.ms</mShaderFileName>
+									</item>
+								</second>
+							</item>
+						</mAttributeMetaLookup>
+					</mMaterialData>
+				</mMaterial>
+				<blendState>0</blendState>
+				<mBumpFactor>1</mBumpFactor>
+				<mMetallicFactor>1</mMetallicFactor>
+				<mRoughnessFactor>1</mRoughnessFactor>
+				<mBlendState>5</mBlendState>
+				<mEmissiveColor>
+					<r>0</r>
+					<g>0</g>
+					<b>0</b>
+					<a>1</a>
+				</mEmissiveColor>
+			</CRenderer>
+		</item>
+	</mComponents>
+	<mComponentLookupTable>
+		<count>2</count>
+		<item_version>0</item_version>
+		<item>
+			<first>CMeshRenderer</first>
+			<second class_id_reference="9" object_id_reference="_15"></second>
+		</item>
+		<item>
+			<first>CTransform</first>
+			<second class_id_reference="1" object_id_reference="_1"></second>
+		</item>
+	</mComponentLookupTable>
+	<mParent class_id="-1"></mParent>
+	<isManaged>1</isManaged>
+	<flags>
+		<count>0</count>
+		<item_version>0</item_version>
+	</flags>
+	<children>
+		<count>0</count>
+		<item_version>0</item_version>
+	</children>
+	<mLayerMask>
+		<mCurrentLayers>1</mCurrentLayers>
+	</mLayerMask>
+	<mGUID>22bf3bcf-ac0b-4fde-b3f8-b81ee1ca6600</mGUID>
+</g>

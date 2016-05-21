@@ -1,0 +1,9 @@
+﻿  Performing Custom Build Tools
+  Invoking SWIG...
+  example_wrap.c
+  example.c
+  Generating Code...
+example.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library Win32\Debug\example.lib and object Win32\Debug\example.exp
+  example-vc.vcxproj -> C:\Users\Nicholas\Desktop\swigwin-3.0.2\Examples\csharp\simple\Win32\Debug\example.dll
+          1 file(s) copied.

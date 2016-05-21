@@ -1,0 +1,29 @@
+﻿<mui:ModernDialog x:Class="MochaEditor.MergeMapWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="Partial Merge" Height="500" Width="300"
+                  Loaded="ModernDialog_Loaded">
+
+
+    <Grid>
+        <DockPanel>
+            <TextBlock Text="Select Objects To Merge:" DockPanel.Dock="Top"/>
+            <Button Content="Un-check All" Name="UncheckButton" Click="UncheckButton_Click"  DockPanel.Dock="Bottom" Height="40"/>
+            <Button Content="Check All" Name="CheckButton" Click="CheckButton_Click"  DockPanel.Dock="Bottom" Height="40"/>
+            <Button Content="Merge Checked" Name="MergeButton" Click="MergeButton_Click" DockPanel.Dock="Bottom" Height="40"/>
+            <ScrollViewer>
+                <ListView Name="ObjectsList" ItemsSource="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=objects}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <DockPanel>
+                                <CheckBox DockPanel.Dock="Left" IsChecked="{Binding ShouldMerge}" IsEnabled="{Binding Mergeable}"/>
+                                <TextBlock Text="{Binding Name}"/>
+                            </DockPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollViewer>
+        </DockPanel>
+    </Grid>
+</mui:ModernDialog>

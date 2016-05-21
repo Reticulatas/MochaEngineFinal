@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{782B2E79-D60F-47B2-B850-D5F4877893D0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MochaCore</RootNamespace>
+    <AssemblyName>MochaCore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Math, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\output\Microsoft.Xna.Framework.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharpMocha\interface\AABB.cs">
+      <Link>SharpMochaInterface\AABB.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Animation.cs">
+      <Link>SharpMochaInterface\Animation.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\AnimContainer.cs">
+      <Link>SharpMochaInterface\AnimContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Asset.cs">
+      <Link>SharpMochaInterface\Asset.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\AssetHandle.cs">
+      <Link>SharpMochaInterface\AssetHandle.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\AssetManager.cs">
+      <Link>SharpMochaInterface\AssetManager.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\AudioAsset.cs">
+      <Link>SharpMochaInterface\AudioAsset.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpMocha\interface\AudioManager.cs">
+      <Link>SharpMochaInterface\AudioManager.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Barrista.cs">
+      <Link>SharpMochaInterface\Barrista.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\BaseState.cs">
+      <Link>SharpMochaInterface\BaseState.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\BoolVector.cs">
+      <Link>SharpMochaInterface\BoolVector.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CAnimationController.cs">
+      <Link>SharpMochaInterface\CAnimationController.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CArtifactFX.cs">
+      <Link>SharpMochaInterface\CArtifactFX.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CBloom.cs">
+      <Link>SharpMochaInterface\CBloom.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CBoxColliderComponent.cs">
+      <Link>SharpMochaInterface\CBoxColliderComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CCamera.cs">
+      <Link>SharpMochaInterface\CCamera.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CCensorFX.cs">
+      <Link>SharpMochaInterface\CCensorFX.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CChromaticAberration.cs">
+      <Link>SharpMochaInterface\CChromaticAberration.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CConvexHull.cs">
+      <Link>SharpMochaInterface\CConvexHull.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CDiffuseRenderer.cs">
+      <Link>SharpMochaInterface\CDiffuseRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CFilmGrain.cs">
+      <Link>SharpMochaInterface\CFilmGrain.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CFontRenderer.cs">
+      <Link>SharpMochaInterface\CFontRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CForwardRenderer.cs">
+      <Link>SharpMochaInterface\CForwardRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CLight.cs">
+      <Link>SharpMochaInterface\CLight.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CMapZone.cs">
+      <Link>SharpMochaInterface\CMapZone.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CMeshColliderComponent.cs">
+      <Link>SharpMochaInterface\CMeshColliderComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CMeshRenderer.cs">
+      <Link>SharpMochaInterface\CMeshRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CMotionBlur.cs">
+      <Link>SharpMochaInterface\CMotionBlur.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\ColliderComponent.cs">
+      <Link>SharpMochaInterface\ColliderComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CollisionData.cs">
+      <Link>SharpMochaInterface\CollisionData.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Color.cs">
+      <Link>SharpMochaInterface\Color.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\ColorNode.cs">
+      <Link>SharpMochaInterface\ColorNode.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Component.cs">
+      <Link>SharpMochaInterface\Component.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\ComponentVector.cs">
+      <Link>SharpMochaInterface\ComponentVector.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CParticleEmitter.cs">
+      <Link>SharpMochaInterface\CParticleEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CParticleRenderer.cs">
+      <Link>SharpMochaInterface\CParticleRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CPhysics.cs">
+      <Link>SharpMochaInterface\CPhysics.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CPostProcess.cs">
+      <Link>SharpMochaInterface\CPostProcess.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CReflectionProbe.cs">
+      <Link>SharpMochaInterface\CReflectionProbe.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CRenderer.cs">
+      <Link>SharpMochaInterface\CRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CScript.cs">
+      <Link>SharpMochaInterface\CScript.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpMocha\interface\CShadowProbe.cs">
+      <Link>SharpMochaInterface\CShadowProbe.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CSkinMeshRenderer.cs">
+      <Link>SharpMochaInterface\CSkinMeshRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CSound.cs">
+      <Link>SharpMochaInterface\CSound.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CSphereColliderComponent.cs">
+      <Link>SharpMochaInterface\CSphereColliderComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpMocha\interface\CStreamMarker.cs">
+      <Link>SharpMochaInterface\CStreamMarker.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CStreamZone.cs">
+      <Link>SharpMochaInterface\CStreamZone.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CStreamZoneListener.cs">
+      <Link>SharpMochaInterface\CStreamZoneListener.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CTransform.cs">
+      <Link>SharpMochaInterface\CTransform.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CTransformVector.cs">
+      <Link>SharpMochaInterface\CTransformVector.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\CZone.cs">
+      <Link>SharpMochaInterface\CZone.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\EditorState.cs">
+      <Link>SharpMochaInterface\EditorState.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\EditorSubsystem.cs">
+      <Link>SharpMochaInterface\EditorSubsystem.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\EmitterProperties.cs">
+      <Link>SharpMochaInterface\EmitterProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Engine.cs">
+      <Link>SharpMochaInterface\Engine.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\EulerAngles.cs">
+      <Link>SharpMochaInterface\EulerAngles.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\FrameController.cs">
+      <Link>SharpMochaInterface\FrameController.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\GameObject.cs">
+      <Link>SharpMochaInterface\GameObject.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\GameObjectIterator.cs">
+      <Link>SharpMochaInterface\GameObjectIterator.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\gameObjectSlotTable.cs">
+      <Link>SharpMochaInterface\gameObjectSlotTable.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\GameObjectVector.cs">
+      <Link>SharpMochaInterface\GameObjectVector.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\GSM.cs">
+      <Link>SharpMochaInterface\GSM.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\IMeta.cs">
+      <Link>SharpMochaInterface\IMeta.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Input.cs">
+      <Link>SharpMochaInterface\Input.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\IntVector.cs">
+      <Link>SharpMochaInterface\IntVector.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\IZone.cs">
+      <Link>SharpMochaInterface\IZone.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\KeyFrame.cs">
+      <Link>SharpMochaInterface\KeyFrame.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\LayerMask.cs">
+      <Link>SharpMochaInterface\LayerMask.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Map.cs">
+      <Link>SharpMochaInterface\Map.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\MatAttribNode.cs">
+      <Link>SharpMochaInterface\MatAttribNode.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Material.cs">
+      <Link>SharpMochaInterface\Material.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\MaterialAttribNodeMap.cs">
+      <Link>SharpMochaInterface\MaterialAttribNodeMap.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\MaterialAttribNodeVector.cs">
+      <Link>SharpMochaInterface\MaterialAttribNodeVector.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\MaterialImpl.cs">
+      <Link>SharpMochaInterface\MaterialImpl.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Mesh.cs">
+      <Link>SharpMochaInterface\Mesh.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\MochaVec2.cs">
+      <Link>SharpMochaInterface\MochaVec2.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\MochaVec3.cs">
+      <Link>SharpMochaInterface\MochaVec3.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\MochaVec4.cs">
+      <Link>SharpMochaInterface\MochaVec4.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\MochaWindow.cs">
+      <Link>SharpMochaInterface\MochaWindow.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\ObjectFactory.cs">
+      <Link>SharpMochaInterface\ObjectFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\OculusVR.cs">
+      <Link>SharpMochaInterface\OculusVR.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\OperationList.cs">
+      <Link>SharpMochaInterface\OperationList.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\ParticleBehaviour.cs">
+      <Link>SharpMochaInterface\ParticleBehaviour.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\ParticleEmissionType.cs">
+      <Link>SharpMochaInterface\ParticleEmissionType.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\PhysicEngine.cs">
+      <Link>SharpMochaInterface\PhysicEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Prefab.cs">
+      <Link>SharpMochaInterface\Prefab.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpMocha\interface\RayCastResult.cs">
+      <Link>SharpMochaInterface\RayCastResult.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Renderer.cs">
+      <Link>SharpMochaInterface\Renderer.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\RigidBody.cs">
+      <Link>SharpMochaInterface\RigidBody.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\RigidBodyComponent.cs">
+      <Link>SharpMochaInterface\RigidBodyComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\ScriptProperties.cs">
+      <Link>SharpMochaInterface\ScriptProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\ScriptSubsystem.cs">
+      <Link>SharpMochaInterface\ScriptSubsystem.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SetGameObjectPtr.cs">
+      <Link>SharpMochaInterface\SetGameObjectPtr.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\ShaderNode.cs">
+      <Link>SharpMochaInterface\ShaderNode.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SharpMocha.cs">
+      <Link>SharpMochaInterface\SharpMocha.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SharpMochaPINVOKE.cs">
+      <Link>SharpMochaInterface\SharpMochaPINVOKE.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SkinnedVertex.cs">
+      <Link>SharpMochaInterface\SkinnedVertex.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Sound.cs">
+      <Link>SharpMochaInterface\Sound.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SoundHandleList.cs">
+      <Link>SharpMochaInterface\SoundHandleList.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SoundParameterList.cs">
+      <Link>SharpMochaInterface\SoundParameterList.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\StateObjDesc.cs">
+      <Link>SharpMochaInterface\StateObjDesc.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\StateObjDescVector.cs">
+      <Link>SharpMochaInterface\StateObjDescVector.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\StateSerializer.cs">
+      <Link>SharpMochaInterface\StateSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_Collider.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_Collider.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_ConstRealPointer.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_ConstRealPointer.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_float.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_float.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_GPUShader.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_GPUShader.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_HWND.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_HWND.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_int.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_int.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_Math__Matrix3.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_Math__Matrix3.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_MeshType.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_MeshType.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_p_BaseState.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_p_BaseState.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_Shader.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_Shader.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_std__setT_GameObject_p_t__iterator.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_std__setT_GameObject_p_t__iterator.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_std__setT_std__string_t__iterator.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_std__setT_std__string_t__iterator.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_std__string.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_std__string.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_std__vectorT_KeyFrame_t.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_std__vectorT_KeyFrame_t.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_std__vectorT_Track_t.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_std__vectorT_Track_t.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_Vector2.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_Vector2.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_Vector3.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_Vector3.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_Vector4.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_Vector4.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\SWIGTYPE_p_VQS.cs">
+      <Link>SharpMochaInterface\SWIGTYPE_p_VQS.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\TagSet.cs">
+      <Link>SharpMochaInterface\TagSet.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\TextureNode.cs">
+      <Link>SharpMochaInterface\TextureNode.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Track.cs">
+      <Link>SharpMochaInterface\Track.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\TypeEnum.cs">
+      <Link>SharpMochaInterface\TypeEnum.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\UVTransformNode.cs">
+      <Link>SharpMochaInterface\UVTransformNode.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Vector3Vector.cs">
+      <Link>SharpMochaInterface\Vector3Vector.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\Vertex.cs">
+      <Link>SharpMochaInterface\Vertex.cs</Link>
+    </Compile>
+    <Compile Include="..\sharpmocha\interface\VertexVector.cs">
+      <Link>SharpMochaInterface\VertexVector.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpMocha\interface\WidgetManager.cs">
+      <Link>SharpMochaInterface\WidgetManager.cs</Link>
+    </Compile>
+    <Compile Include="Attributes.cs" />
+    <Compile Include="CastingHelper.cs" />
+    <Compile Include="InterfaceCallbacks.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="CoffeeConstructor.cs" />
+    <Compile Include="MUI\ContainerControl.cs" />
+    <Compile Include="MUI\IContainer.cs" />
+    <Compile Include="MUI\StackPanel.cs" />
+    <Compile Include="MUI\Surface.cs" />
+    <Compile Include="MUI\Control.cs" />
+    <Compile Include="MUI\Element.cs" />
+    <Compile Include="MUI\IControl.cs" />
+    <Compile Include="MUI\ILayoutable.cs" />
+    <Compile Include="MUI\MUIException.cs" />
+    <Compile Include="MUI\Text.cs" />
+    <Compile Include="MUI\UnderlyingObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScriptException.cs" />
+    <Compile Include="ScriptManager.cs" />
+    <Compile Include="ScriptSubsystemManaged.cs" />
+    <Compile Include="StateMachineController.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

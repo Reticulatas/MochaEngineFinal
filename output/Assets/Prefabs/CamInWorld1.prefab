@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="10">
+<g class_id="0" tracking_level="1" version="8" object_id="_0">
+	<mName>CamInWorld1</mName>
+	<transform class_id="1" tracking_level="1" version="3" object_id="_1">
+		<Component class_id="2" tracking_level="0" version="3">
+			<IRegisterable class_id="3" tracking_level="0" version="1">
+				<as_ref_count>1</as_ref_count>
+			</IRegisterable>
+			<enabled>1</enabled>
+			<gameObject class_id_reference="0" object_id_reference="_0"></gameObject>
+			<myType>CTransform</myType>
+		</Component>
+		<position class_id="4" tracking_level="0" version="0">
+			<t.x>0</t.x>
+			<t.y>0</t.y>
+			<t.z>0</t.z>
+		</position>
+		<scale>
+			<t.x>1</t.x>
+			<t.y>1</t.y>
+			<t.z>1</t.z>
+		</scale>
+		<rotation class_id="5" tracking_level="0" version="0">
+			<t.Angles>
+				<t.x>0</t.x>
+				<t.y>0</t.y>
+				<t.z>0</t.z>
+			</t.Angles>
+		</rotation>
+		<mDirection>
+			<t.x>0</t.x>
+			<t.y>0</t.y>
+			<t.z>0</t.z>
+		</mDirection>
+		<mScale class_id="6" tracking_level="0" version="0">
+			<t.array>
+				<count>16</count>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+			</t.array>
+		</mScale>
+		<mRotation>
+			<t.array>
+				<count>16</count>
+				<item>0.00079627428</item>
+				<item>-0</item>
+				<item>0.9999997</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+				<item>-0</item>
+				<item>0</item>
+				<item>-0.9999997</item>
+				<item>0</item>
+				<item>0.00079627428</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+			</t.array>
+		</mRotation>
+		<mWorld>
+			<t.array>
+				<count>16</count>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>0</item>
+				<item>1</item>
+			</t.array>
+		</mWorld>
+		<children class_id="7" tracking_level="0" version="0">
+			<count>1</count>
+			<item_version>0</item_version>
+			<item class_id_reference="1" object_id="_2">
+				<Component>
+					<IRegisterable>
+						<as_ref_count>1</as_ref_count>
+					</IRegisterable>
+					<enabled>1</enabled>
+					<gameObject class_id_reference="0" object_id="_3">
+						<mName>CamInWorldLens1</mName>
+						<transform class_id_reference="1" object_id_reference="_2"></transform>
+						<mComponents class_id="8" tracking_level="0" version="0">
+							<count>3</count>
+							<item_version>0</item_version>
+							<item class_id_reference="1" object_id_reference="_2"></item>
+							<item class_id="9" class_name="CMeshRenderer" tracking_level="1" version="2" object_id="_4">
+								<CRenderer class_id="10" tracking_level="0" version="5">
+									<Component>
+										<IRegisterable>
+											<as_ref_count>1</as_ref_count>
+										</IRegisterable>
+										<enabled>1</enabled>
+										<gameObject class_id_reference="0" object_id_reference="_3"></gameObject>
+										<myType>CMeshRenderer</myType>
+									</Component>
+									<mMesh class_id="11" tracking_level="0" version="1">
+										<mAssetName>OBJ_Surveil_Camera_Lens.bean</mAssetName>
+									</mMesh>
+									<mMaterial class_id="12" tracking_level="1" version="2" object_id="_5">
+										<Asset class_id="13" tracking_level="0" version="1">
+											<mName>[fee]</mName>
+											<mType></mType>
+											<mUseCounter>0</mUseCounter>
+											<mAutoUnload>1</mAutoUnload>
+										</Asset>
+										<mMaterialData class_id="14" tracking_level="1" version="1" object_id="_6">
+											<mAttributeMetaLookup class_id="15" tracking_level="0" version="0">
+												<count>3</count>
+												<item_version>0</item_version>
+												<item class_id="16" tracking_level="0" version="0">
+													<first>1</first>
+													<second class_id="17" tracking_level="0" version="0">
+														<count>1</count>
+														<item_version>0</item_version>
+														<item class_id="18" class_name="ColorNode" tracking_level="1" version="2" object_id="_7">
+															<MatAttribNode class_id="19" tracking_level="0" version="1">
+																<mNodeType>1</mNodeType>
+															</MatAttribNode>
+															<color class_id="20" tracking_level="0" version="1">
+																<r>1</r>
+																<g>1</g>
+																<b>1</b>
+																<a>1</a>
+															</color>
+															<mTextureScale class_id="21" tracking_level="0" version="0">
+																<t.x>1</t.x>
+																<t.y>1</t.y>
+															</mTextureScale>
+															<mTextureOffset>
+																<t.x>0</t.x>
+																<t.y>0</t.y>
+															</mTextureOffset>
+														</item>
+													</second>
+												</item>
+												<item>
+													<first>2</first>
+													<second>
+														<count>5</count>
+														<item_version>0</item_version>
+														<item class_id="22" class_name="TextureNode" tracking_level="1" version="1" object_id="_8">
+															<MatAttribNode>
+																<mNodeType>2</mNodeType>
+															</MatAttribNode>
+															<mTexture>
+																<mAssetName>Surveillance_Camera_albedo.png</mAssetName>
+															</mTexture>
+															<mTextureRegister>0</mTextureRegister>
+														</item>
+														<item class_id_reference="22" object_id="_9">
+															<MatAttribNode>
+																<mNodeType>2</mNodeType>
+															</MatAttribNode>
+															<mTexture>
+																<mAssetName>Surveillance_Camera_normal.png</mAssetName>
+															</mTexture>
+															<mTextureRegister>1</mTextureRegister>
+														</item>
+														<item class_id_reference="22" object_id="_10">
+															<MatAttribNode>
+																<mNodeType>2</mNodeType>
+															</MatAttribNode>
+															<mTexture>
+																<mAssetName>Surveillance_Camera_albedo.png</mAssetName>
+															</mTexture>
+															<mTextureRegister>2</mTextureRegister>
+														</item>
+														<item class_id_reference="22" object_id="_11">
+															<MatAttribNode>
+																<mNodeType>2</mNodeType>
+															</MatAttribNode>
+															<mTexture>
+																<mAssetName>Surveillance_Camera_roughness.png</mAssetName>
+															</mTexture>
+															<mTextureRegister>3</mTextureRegister>
+														</item>
+														<item class_id_reference="22" object_id="_12">
+															<MatAttribNode>
+																<mNodeType>2</mNodeType>
+															</MatAttribNode>
+															<mTexture>
+																<mAssetName>Surveillance_Camera_metallic.png</mAssetName>
+															</mTexture>
+															<mTextureRegister>4</mTextureRegister>
+														</item>
+													</second>
+												</item>
+												<item>
+													<first>4</first>
+													<second>
+														<count>1</count>
+														<item_version>0</item_version>
+														<item class_id="23" class_name="ShaderNode" tracking_level="1" version="2" object_id="_13">
+															<MatAttribNode>
+																<mNodeType>4</mNodeType>
+															</MatAttribNode>
+															<mShaderName class_id="24" tracking_level="0" version="2">
+																<str></str>
+																<length>0</length>
+																<capacity>0</capacity>
+															</mShaderName>
+															<mShaderFileName>MochaDeferredGeometry.ms</mShaderFileName>
+														</item>
+													</second>
+												</item>
+											</mAttributeMetaLookup>
+										</mMaterialData>
+									</mMaterial>
+									<blendState>0</blendState>
+									<mBumpFactor>0.80000001</mBumpFactor>
+									<mMetallicFactor>1</mMetallicFactor>
+									<mRoughnessFactor>1</mRoughnessFactor>
+									<mBlendState>5</mBlendState>
+									<mEmissiveColor>
+										<r>0</r>
+										<g>0</g>
+										<b>0</b>
+										<a>1</a>
+									</mEmissiveColor>
+								</CRenderer>
+							</item>
+							<item class_id="25" class_name="CScript" tracking_level="1" version="2" object_id="_14">
+								<Component>
+									<IRegisterable>
+										<as_ref_count>1</as_ref_count>
+									</IRegisterable>
+									<enabled>1</enabled>
+									<gameObject class_id_reference="0" object_id_reference="_3"></gameObject>
+									<myType>CScript</myType>
+								</Component>
+								<register_id>c79e5702-6a49-481f-96c2-26e6b0bc68ac</register_id>
+								<scriptAsset>
+									<mAssetName>CameraRotationLimit.cs</mAssetName>
+								</scriptAsset>
+								<prevScriptAsset>
+									<mAssetName>CameraRotationLimit.cs</mAssetName>
+								</prevScriptAsset>
+								<register_id>c79e5702-6a49-481f-96c2-26e6b0bc68ac</register_id>
+								<invalid>0</invalid>
+							</item>
+						</mComponents>
+						<mComponentLookupTable class_id="26" tracking_level="0" version="0">
+							<count>2</count>
+							<item_version>0</item_version>
+							<item class_id="27" tracking_level="0" version="0">
+								<first>CMeshRenderer</first>
+								<second class_id_reference="9" object_id_reference="_4"></second>
+							</item>
+							<item>
+								<first>CTransform</first>
+								<second class_id_reference="1" object_id_reference="_2"></second>
+							</item>
+						</mComponentLookupTable>
+						<mParent class_id="-1"></mParent>
+						<isManaged>1</isManaged>
+						<flags class_id="28" tracking_level="0" version="0">
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>CamInWorld</item>
+						</flags>
+						<children class_id="29" tracking_level="0" version="0">
+							<count>0</count>
+							<item_version>0</item_version>
+						</children>
+						<mLayerMask class_id="30" tracking_level="0" version="1">
+							<mCurrentLayers>8</mCurrentLayers>
+						</mLayerMask>
+						<mGUID>3ad6b31d-b298-4cb6-a263-3a2bb6774a4d</mGUID>
+					</gameObject>
+					<myType>CTransform</myType>
+				</Component>
+				<position>
+					<t.x>0</t.x>
+					<t.y>0</t.y>
+					<t.z>0</t.z>
+				</position>
+				<scale>
+					<t.x>1</t.x>
+					<t.y>1</t.y>
+					<t.z>1</t.z>
+				</scale>
+				<rotation>
+					<t.Angles>
+						<t.x>0</t.x>
+						<t.y>0</t.y>
+						<t.z>0</t.z>
+					</t.Angles>
+				</rotation>
+				<mDirection>
+					<t.x>0</t.x>
+					<t.y>0</t.y>
+					<t.z>0</t.z>
+				</mDirection>
+				<mScale>
+					<t.array>
+						<count>16</count>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+					</t.array>
+				</mScale>
+				<mRotation>
+					<t.array>
+						<count>16</count>
+						<item>0.92106098</item>
+						<item>0</item>
+						<item>-0.38941833</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0.38941833</item>
+						<item>0</item>
+						<item>0.92106098</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+					</t.array>
+				</mRotation>
+				<mWorld>
+					<t.array>
+						<count>16</count>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>0</item>
+						<item>1</item>
+					</t.array>
+				</mWorld>
+				<children>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item class_id_reference="1" object_id="_15">
+						<Component>
+							<IRegisterable>
+								<as_ref_count>1</as_ref_count>
+							</IRegisterable>
+							<enabled>1</enabled>
+							<gameObject class_id_reference="0" object_id="_16">
+								<mName>CamLight</mName>
+								<transform class_id_reference="1" object_id_reference="_15"></transform>
+								<mComponents>
+									<count>2</count>
+									<item_version>0</item_version>
+									<item class_id_reference="1" object_id_reference="_15"></item>
+									<item class_id="31" class_name="CLight" tracking_level="1" version="3" object_id="_17">
+										<Component>
+											<IRegisterable>
+												<as_ref_count>1</as_ref_count>
+											</IRegisterable>
+											<enabled>0</enabled>
+											<gameObject class_id_reference="0" object_id_reference="_16"></gameObject>
+											<myType>CLight</myType>
+										</Component>
+										<mDiffuse>
+											<r>1</r>
+											<g>1</g>
+											<b>1</b>
+											<a>1</a>
+										</mDiffuse>
+										<mRange>25</mRange>
+										<mSpot>1</mSpot>
+										<mAtt>2.7</mAtt>
+										<mLightType>2</mLightType>
+										<mLightProperties class_id="32" tracking_level="0" version="1">
+											<mDiffuse class_id="33" tracking_level="0" version="0">
+												<t.x>0</t.x>
+												<t.y>0</t.y>
+												<t.z>0</t.z>
+												<t.w>0</t.w>
+											</mDiffuse>
+											<mRange>0</mRange>
+											<mDirection>
+												<t.x>0</t.x>
+												<t.y>0</t.y>
+												<t.z>0</t.z>
+											</mDirection>
+											<mSpot>0</mSpot>
+											<mAtt>0</mAtt>
+											<mLightType>0</mLightType>
+										</mLightProperties>
+										<mInnerAngle>30</mInnerAngle>
+										<mOuterAngle>45</mOuterAngle>
+										<mLightDir>
+											<t.x>0</t.x>
+											<t.y>-1</t.y>
+											<t.z>0</t.z>
+										</mLightDir>
+										<mIntensity>1</mIntensity>
+									</item>
+								</mComponents>
+								<mComponentLookupTable>
+									<count>2</count>
+									<item_version>0</item_version>
+									<item>
+										<first>CLight</first>
+										<second class_id_reference="31" object_id_reference="_17"></second>
+									</item>
+									<item>
+										<first>CTransform</first>
+										<second class_id_reference="1" object_id_reference="_15"></second>
+									</item>
+								</mComponentLookupTable>
+								<mParent class_id="-1"></mParent>
+								<isManaged>1</isManaged>
+								<flags>
+									<count>0</count>
+									<item_version>0</item_version>
+								</flags>
+								<children>
+									<count>0</count>
+									<item_version>0</item_version>
+								</children>
+								<mLayerMask>
+									<mCurrentLayers>1</mCurrentLayers>
+								</mLayerMask>
+								<mGUID>6547e01d-8127-4163-9c62-a4b91612989a</mGUID>
+							</gameObject>
+							<myType>CTransform</myType>
+						</Component>
+						<position>
+							<t.x>0</t.x>
+							<t.y>0</t.y>
+							<t.z>0</t.z>
+						</position>
+						<scale>
+							<t.x>1</t.x>
+							<t.y>1</t.y>
+							<t.z>1</t.z>
+						</scale>
+						<rotation>
+							<t.Angles>
+								<t.x>-90</t.x>
+								<t.y>0</t.y>
+								<t.z>0</t.z>
+							</t.Angles>
+						</rotation>
+						<mDirection>
+							<t.x>0</t.x>
+							<t.y>0</t.y>
+							<t.z>0</t.z>
+						</mDirection>
+						<mScale>
+							<t.array>
+								<count>16</count>
+								<item>1</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>1</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>1</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>1</item>
+							</t.array>
+						</mScale>
+						<mRotation>
+							<t.array>
+								<count>16</count>
+								<item>1</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>1</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>1</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>1</item>
+							</t.array>
+						</mRotation>
+						<mWorld>
+							<t.array>
+								<count>16</count>
+								<item>1</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>-4.3711388e-008</item>
+								<item>1</item>
+								<item>0</item>
+								<item>0</item>
+								<item>-1</item>
+								<item>-4.3711388e-008</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>0</item>
+								<item>1</item>
+							</t.array>
+						</mWorld>
+						<children>
+							<count>0</count>
+							<item_version>0</item_version>
+						</children>
+						<mParent class_id_reference="1" object_id_reference="_2"></mParent>
+					</item>
+				</children>
+				<mParent class_id_reference="1" object_id_reference="_1"></mParent>
+			</item>
+		</children>
+		<mParent class_id="-1"></mParent>
+	</transform>
+	<mComponents>
+		<count>2</count>
+		<item_version>0</item_version>
+		<item class_id_reference="1" object_id_reference="_1"></item>
+		<item class_id_reference="9" object_id="_18">
+			<CRenderer>
+				<Component>
+					<IRegisterable>
+						<as_ref_count>1</as_ref_count>
+					</IRegisterable>
+					<enabled>1</enabled>
+					<gameObject class_id_reference="0" object_id_reference="_0"></gameObject>
+					<myType>CMeshRenderer</myType>
+				</Component>
+				<mMesh>
+					<mAssetName>OBJ_Surveil_Camera_Mount.bean</mAssetName>
+				</mMesh>
+				<mMaterial object_id="_19">
+					<Asset>
+						<mName>[fee]</mName>
+						<mType></mType>
+						<mUseCounter>0</mUseCounter>
+						<mAutoUnload>1</mAutoUnload>
+					</Asset>
+					<mMaterialData object_id="_20">
+						<mAttributeMetaLookup>
+							<count>3</count>
+							<item_version>0</item_version>
+							<item>
+								<first>1</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item class_id_reference="18" object_id="_21">
+										<MatAttribNode>
+											<mNodeType>1</mNodeType>
+										</MatAttribNode>
+										<color>
+											<r>1</r>
+											<g>1</g>
+											<b>1</b>
+											<a>1</a>
+										</color>
+										<mTextureScale>
+											<t.x>1</t.x>
+											<t.y>1</t.y>
+										</mTextureScale>
+										<mTextureOffset>
+											<t.x>0</t.x>
+											<t.y>0</t.y>
+										</mTextureOffset>
+									</item>
+								</second>
+							</item>
+							<item>
+								<first>2</first>
+								<second>
+									<count>5</count>
+									<item_version>0</item_version>
+									<item class_id_reference="22" object_id="_22">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>Surveillance_Camera_albedo.png</mAssetName>
+										</mTexture>
+										<mTextureRegister>0</mTextureRegister>
+									</item>
+									<item class_id_reference="22" object_id="_23">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>Surveillance_Camera_normal.png</mAssetName>
+										</mTexture>
+										<mTextureRegister>1</mTextureRegister>
+									</item>
+									<item class_id_reference="22" object_id="_24">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>Surveillance_Camera_albedo.png</mAssetName>
+										</mTexture>
+										<mTextureRegister>2</mTextureRegister>
+									</item>
+									<item class_id_reference="22" object_id="_25">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>Surveillance_Camera_roughness.png</mAssetName>
+										</mTexture>
+										<mTextureRegister>3</mTextureRegister>
+									</item>
+									<item class_id_reference="22" object_id="_26">
+										<MatAttribNode>
+											<mNodeType>2</mNodeType>
+										</MatAttribNode>
+										<mTexture>
+											<mAssetName>Surveillance_Camera_metallic.png</mAssetName>
+										</mTexture>
+										<mTextureRegister>4</mTextureRegister>
+									</item>
+								</second>
+							</item>
+							<item>
+								<first>4</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item class_id_reference="23" object_id="_27">
+										<MatAttribNode>
+											<mNodeType>4</mNodeType>
+										</MatAttribNode>
+										<mShaderName>
+											<str></str>
+											<length>0</length>
+											<capacity>0</capacity>
+										</mShaderName>
+										<mShaderFileName>MochaDeferredGeometry.ms</mShaderFileName>
+									</item>
+								</second>
+							</item>
+						</mAttributeMetaLookup>
+					</mMaterialData>
+				</mMaterial>
+				<blendState>0</blendState>
+				<mBumpFactor>0.80000001</mBumpFactor>
+				<mMetallicFactor>1</mMetallicFactor>
+				<mRoughnessFactor>1</mRoughnessFactor>
+				<mBlendState>5</mBlendState>
+				<mEmissiveColor>
+					<r>0</r>
+					<g>0</g>
+					<b>0</b>
+					<a>1</a>
+				</mEmissiveColor>
+			</CRenderer>
+		</item>
+	</mComponents>
+	<mComponentLookupTable>
+		<count>2</count>
+		<item_version>0</item_version>
+		<item>
+			<first>CMeshRenderer</first>
+			<second class_id_reference="9" object_id_reference="_18"></second>
+		</item>
+		<item>
+			<first>CTransform</first>
+			<second class_id_reference="1" object_id_reference="_1"></second>
+		</item>
+	</mComponentLookupTable>
+	<mParent class_id="-1"></mParent>
+	<isManaged>1</isManaged>
+	<flags>
+		<count>1</count>
+		<item_version>0</item_version>
+		<item>CamInWorld</item>
+	</flags>
+	<children>
+		<count>0</count>
+		<item_version>0</item_version>
+	</children>
+	<mLayerMask>
+		<mCurrentLayers>1</mCurrentLayers>
+	</mLayerMask>
+	<mGUID>4123da72-5627-4871-988e-8decf9ad1d97</mGUID>
+</g>

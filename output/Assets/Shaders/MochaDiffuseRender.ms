@@ -1,0 +1,2 @@
+MochaDiffuseRender_VS.hlsl
+MochaDiffuseRender_PS.hlsl

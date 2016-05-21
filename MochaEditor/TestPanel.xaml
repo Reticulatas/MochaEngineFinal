@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="MochaEditor.TestPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Loaded="UserControl_Loaded">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+        <Button Content="Stop Testing" Name="StopTestingButton" Visibility="Collapsed" Click="StopTestingButton_Click"/>
+        <TextBlock Foreground="Red" FontWeight="Bold" Name="ErrorText" TextAlignment="Center" Visibility="Collapsed">
+                SCRIPTS CONTAIN ERRORS<LineBreak/>
+                FIX BEFORE TESTING
+        </TextBlock>
+        <StackPanel Orientation="Vertical" Name="StartPanelButtons" Visibility="Visible" HorizontalAlignment="Center">
+            <Button Content="Test From Start" Margin="5" Name="TestStartButton" Click="TestStartButton_Click"/>
+            <Button Content="Test From Current Position" Margin="5" Name="TestCurrentPosButton" Click="TestCurrentPosButton_Click"/>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

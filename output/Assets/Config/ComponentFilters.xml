@@ -1,0 +1,45 @@
+<Filters>
+	<Filter name='Graphics'>
+		<type>CMeshRenderer</type>
+		<type>CForwardRenderer</type>
+		<type>CDiffuseRenderer</type>
+		<type>CLight</type>
+    <type>CShadowProbe</type>
+		<type>CCamera</type>
+		<type>CAnimationController</type>
+		<type>CReflectionProbe</type>
+		<type>CFontRenderer</type>
+    <type>CDiffuseRenderer</type>
+	</Filter>
+	<Filter name='Post Process FX'>
+		<type>CMotionBlur</type>
+		<type>CBloom</type>
+		<type>CCensorFX</type>
+		<type>CFilmGrain</type>
+		<type>CChromaticAberration</type>
+		<type>CArtifactFX</type>
+	</Filter>
+	<Filter name='Physics'>
+		<type>CMeshColliderComponent</type>
+		<type>CBoxColliderComponent</type>
+		<type>CSphereColliderComponent</type>
+		<type>CPhysics</type>
+		<type>CConvexHull</type>
+	</Filter>
+	<Filter name='Gameplay'>
+		<type>CZone</type>
+		<type>CScript</type>
+		<type>CSound</type>
+	</Filter>
+	<Filter name='Particles'>
+		<type>CParticleEmitter</type>
+	</Filter>
+	<Filter name='Streaming'>
+		<type>CStreamMarker</type>
+		<type>CMapZone</type>
+		<type>CStreamZone</type>
+		<type>CStreamZoneListener</type>
+	</Filter>
+	<Filter name='Uncategorized'>
+	</Filter>
+</Filters>

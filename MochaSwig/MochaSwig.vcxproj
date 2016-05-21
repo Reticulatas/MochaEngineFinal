@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{199D2323-A54C-4540-ABF4-444659EEC644}</ProjectGuid>
+    <RootNamespace>MochaSwig</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\SharpMocha\swigwin\Source\CParse\cscanner.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\CParse\parser.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\CParse\templ.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\CParse\util.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\DOH\base.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\DOH\file.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\DOH\fio.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\DOH\hash.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\DOH\list.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\DOH\memory.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\DOH\string.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\DOH\void.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\allegrocl.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\allocate.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\browser.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\cffi.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\chicken.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\clisp.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\contract.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\csharp.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\d.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\directors.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\emit.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\go.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\guile.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\java.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\javascript.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\lang.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\lua.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\main.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\modula3.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\module.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\mzscheme.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\nested.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\ocaml.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\octave.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\overload.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\perl5.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\php.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\pike.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\python.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\r.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\ruby.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\s-exp.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\swigmain.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\tcl8.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\typepass.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\uffi.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\utils.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Modules\xml.cxx" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Preprocessor\cpp.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Preprocessor\expr.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\cwrap.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\deprecate.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\error.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\extend.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\fragment.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\getopt.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\include.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\misc.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\naming.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\parms.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\scanner.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\stype.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\symbol.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\tree.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\typemap.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\typeobj.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\typesys.c" />
+    <ClCompile Include="..\SharpMocha\swigwin\Source\Swig\wrapfunc.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SharpMocha\swigwin\Source\CParse\cparse.h" />
+    <ClInclude Include="..\SharpMocha\swigwin\Source\CParse\parser.h" />
+    <ClInclude Include="..\SharpMocha\swigwin\Source\DOH\doh.h" />
+    <ClInclude Include="..\SharpMocha\swigwin\Source\DOH\dohint.h" />
+    <ClInclude Include="..\SharpMocha\swigwin\Source\Include\swigwarn.h" />
+    <ClInclude Include="..\SharpMocha\swigwin\Source\Modules\swigmod.h" />
+    <ClInclude Include="..\SharpMocha\swigwin\Source\Preprocessor\preprocessor.h" />
+    <ClInclude Include="..\SharpMocha\swigwin\Source\Swig\swig.h" />
+    <ClInclude Include="..\SharpMocha\swigwin\Source\Swig\swigfile.h" />
+    <ClInclude Include="..\SharpMocha\swigwin\Source\Swig\swigopt.h" />
+    <ClInclude Include="..\SharpMocha\swigwin\Source\Swig\swigparm.h" />
+    <ClInclude Include="..\SharpMocha\swigwin\Source\Swig\swigscan.h" />
+    <ClInclude Include="..\SharpMocha\swigwin\Source\Swig\swigtree.h" />
+    <ClInclude Include="..\SharpMocha\swigwin\Source\Swig\swigwrap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\SharpMocha\swigwin\Source\Makefile.am" />
+    <None Include="..\SharpMocha\swigwin\Source\Makefile.in" />
+    <None Include="..\SharpMocha\swigwin\Source\README" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

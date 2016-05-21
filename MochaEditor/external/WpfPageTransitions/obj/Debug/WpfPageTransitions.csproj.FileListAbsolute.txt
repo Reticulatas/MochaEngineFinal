@@ -1,0 +1,13 @@
+C:\Users\Nicholas\Desktop\mochagame\MochaStudio\MochaEditor\external\WpfPageTransitions\bin\Debug\WpfPageTransitions.dll
+C:\Users\Nicholas\Desktop\mochagame\MochaStudio\MochaEditor\external\WpfPageTransitions\bin\Debug\WpfPageTransitions.pdb
+C:\Users\Nicholas\Desktop\mochagame\MochaStudio\MochaEditor\external\WpfPageTransitions\obj\Debug\WpfPageTransitions.csprojResolveAssemblyReference.cache
+C:\Users\Nicholas\Desktop\mochagame\MochaStudio\MochaEditor\external\WpfPageTransitions\obj\Debug\PageTransition.g.cs
+C:\Users\Nicholas\Desktop\mochagame\MochaStudio\MochaEditor\external\WpfPageTransitions\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Nicholas\Desktop\mochagame\MochaStudio\MochaEditor\external\WpfPageTransitions\obj\Debug\WpfPageTransitions_MarkupCompile.cache
+C:\Users\Nicholas\Desktop\mochagame\MochaStudio\MochaEditor\external\WpfPageTransitions\obj\Debug\WpfPageTransitions_MarkupCompile.lref
+C:\Users\Nicholas\Desktop\mochagame\MochaStudio\MochaEditor\external\WpfPageTransitions\obj\Debug\PageTransition.baml
+C:\Users\Nicholas\Desktop\mochagame\MochaStudio\MochaEditor\external\WpfPageTransitions\obj\Debug\WpfPageTransitions.g.resources
+C:\Users\Nicholas\Desktop\mochagame\MochaStudio\MochaEditor\external\WpfPageTransitions\obj\Debug\WpfPageTransitions.Properties.Resources.resources
+C:\Users\Nicholas\Desktop\mochagame\MochaStudio\MochaEditor\external\WpfPageTransitions\obj\Debug\WpfPageTransitions.csproj.GenerateResource.Cache
+C:\Users\Nicholas\Desktop\mochagame\MochaStudio\MochaEditor\external\WpfPageTransitions\obj\Debug\WpfPageTransitions.dll
+C:\Users\Nicholas\Desktop\mochagame\MochaStudio\MochaEditor\external\WpfPageTransitions\obj\Debug\WpfPageTransitions.pdb
